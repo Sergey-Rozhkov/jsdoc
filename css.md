@@ -62,7 +62,7 @@ a:hover {
 ### Общие вопросы
 
 * Как подключаем стили к странице
-* Вес селектора - [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
+* Специфичность селектора - [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
   * это условные четыре позиции important `x, x, x, x` и `x, x, x, x,` которые заполняются нулями и единицами в соответствии с содержимым селектора. Каждая из позиций имеет своё содержимое:
     * Инлайн стили
     * Идентификаторы
@@ -181,7 +181,7 @@ a:hover {
 
 Пример:
 
-```text
+```css
 .wrapper {
   display: flex;
   flex-flow: row wrap;
