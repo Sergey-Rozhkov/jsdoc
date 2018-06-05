@@ -18,6 +18,8 @@
   * [Service Worker](progresive-web-application/service-worker.md)
 * [HTML](html.md)
 * [CSS](css.md)
-* [JavaScript](javascript.md)
+* [JavaScript](javascript/README.md)
+  * [Passing by value and by reference](javascript/passing-by-value-and-by-reference.md)
+  * [Objects creating](javascript/objects-creating.md)
 * TypeScript
 
