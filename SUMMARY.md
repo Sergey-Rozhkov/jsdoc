@@ -19,7 +19,8 @@
 * [HTML](html.md)
 * [CSS](css.md)
 * [JavaScript](javascript/README.md)
-  * [Passing by value and by reference](javascript/passing-by-value-and-by-reference.md)
   * [Objects creating](javascript/objects-creating.md)
+  * [Passing by value and by reference](javascript/passing-by-value-and-by-reference.md)
+  * [Inheritance and context](javascript/inheritance-and-context.md)
 * TypeScript
 
