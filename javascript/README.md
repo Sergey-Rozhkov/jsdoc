@@ -14,5 +14,13 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Inheritance and context](inheritance-and-context.md)
 
+### Closures
+
+### Hoisting and types
+
+### Promise
+
+### Event loop
+
 
 

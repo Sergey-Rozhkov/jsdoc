@@ -1,23 +1,27 @@
 # Objects creating
 
-* Оператор new
 * Литеральная нотация
+* Оператор `new` - создает экземпляр объекта, встроенного или определенного пользователем, имеющего конструктор
+* Метод `Object.create` - создаёт новый объект с указанными объектом прототипа и свойствами.
 * Конструкторы объектов
-* Метод Object.create
 
-**new** - Оператор \(операторная функция\) которая создает экземпляр объекта, встроенного или определенного пользователем, имеющего конструктор.
-
+{% code-tabs %}
+{% code-tabs-item title="Способы создания объекта" %}
 ```javascript
-const a = new Object();
+const a = {};
 
-const b = Object.create(null);
+const b = new Object();
 
-const c = {};
+const c = Object.create(null);
 
 function User() {}
 const d = new User();
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="Object.create polyfill" %}
 ```javascript
 Object.myCreate = function(prototype, descriptors) {
     function F() {};
@@ -34,8 +38,11 @@ Object.myCreate = function(prototype, descriptors) {
     // Object.defineProperties(object1, descriptors);
 }
 
+// descriptors
 // {x: { value: undefined, writable: true, configurable: true, enumerable: true}}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 
 
