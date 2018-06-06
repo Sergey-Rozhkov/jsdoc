@@ -23,5 +23,8 @@
   * [Passing by value and by reference](javascript/passing-by-value-and-by-reference.md)
   * [Inheritance and context](javascript/inheritance-and-context.md)
   * [Closures](javascript/closures.md)
+  * [Hoisting and types](javascript/hoisting-and-types.md)
+  * [Promise](javascript/promise.md)
+  * [Event loop](javascript/event-loop.md)
 * [TypeScript](typescript.md)
 
