@@ -14,7 +14,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Inheritance and context](inheritance-and-context.md)
 
-### Closures
+### [Closures](closures.md)
 
 ### Hoisting and types
 

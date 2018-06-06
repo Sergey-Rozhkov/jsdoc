@@ -1,5 +1,7 @@
 # Objects creating
 
+#### Способы создания
+
 * Литеральная нотация
 * Оператор `new` - создает экземпляр объекта, встроенного или определенного пользователем, имеющего конструктор
 * Метод `Object.create` - создаёт новый объект с указанными объектом прототипа и свойствами.
@@ -44,5 +46,52 @@ Object.myCreate = function(prototype, descriptors) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+#### Статические методы и свойства
 
+```javascript
+function Article() {
+  Article.count++;
+
+  //...
+}
+Article.count = 0;
+
+Article.showCount = function() {
+  alert( this.count ); // (1)
+}
+
+// использование
+new Article();
+new Article();
+Article.showCount(); // (2)
+```
+
+#### Фабричные методы
+
+```javascript
+function User(userData) {
+  if (userData) { // если указаны данные -- одна ветка if
+    this.name = userData.name;
+    this.age = userData.age;
+  } else { // если не указаны -- другая
+    this.name = 'Аноним';
+  }
+
+  this.sayHi = function() {
+    alert(this.name)
+  };
+  // ...
+}
+
+// Использование
+
+var guest = new User();
+guest.sayHi(); // Аноним
+
+var knownUser = new User({
+  name: 'Вася',
+  age: 25
+});
+knownUser.sayHi(); // Вася
+```
 

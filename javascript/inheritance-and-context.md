@@ -117,6 +117,24 @@ Function.prototype.myBind = function (context, ...args1) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="bind polyfill" %}
+```javascript
+function bind(func, context /*, args*/) {
+  var bindArgs = [].slice.call(arguments, 2); // (1)
+  function wrapper() {                        // (2)
+    var args = [].slice.call(arguments);
+    var unshiftArgs = bindArgs.concat(args);  // (3)
+    return func.apply(context, unshiftArgs);  // (4)
+  }
+  return wrapper;
+}
+
+bind(mul, null, 2)
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## Карринг
 
 `Каррирование` или `карринг` \(англ. currying\) в информатике — преобразование функции от многих аргументов в набор функций, каждая из которых является функцией от одного аргумента.
