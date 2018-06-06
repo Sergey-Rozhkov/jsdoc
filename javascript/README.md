@@ -16,11 +16,11 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Closures](closures.md)
 
-### Hoisting and types
+### [Hoisting and types](hoisting-and-types.md)
 
-### Promise
+### [Promise](promise.md)
 
-### Event loop
+### [Event loop](event-loop.md)
 
 
 

@@ -26,5 +26,6 @@
   * [Hoisting and types](javascript/hoisting-and-types.md)
   * [Promise](javascript/promise.md)
   * [Event loop](javascript/event-loop.md)
+  * [wtf](javascript/wtf.md)
 * [TypeScript](typescript.md)
 

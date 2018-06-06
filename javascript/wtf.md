@@ -1,0 +1,13 @@
+# wtf
+
+```javascript
+var a = 42;
+var b = "foo";
+
+a < b;		// false
+a > b;		// false
+a == b;		// false
+```
+
+
+
