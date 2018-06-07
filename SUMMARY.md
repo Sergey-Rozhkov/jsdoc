@@ -28,4 +28,6 @@
   * [Event loop](javascript/event-loop.md)
   * [wtf](javascript/wtf.md)
 * [TypeScript](typescript.md)
+* [Angular](angular/README.md)
+  * [View encapsulation](angular/view-encapsulation.md)
 
