@@ -65,7 +65,7 @@ _**STEP B\) Estimate duration for the task**_
 
 Теперь мы используем это значение для оценки времени исполнения работы.
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 
 

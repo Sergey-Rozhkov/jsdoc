@@ -74,7 +74,7 @@ When it comes to best practices for TFS I would love to point you to all the [gu
 
 ## Tests running
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 ## Build files transfer
 

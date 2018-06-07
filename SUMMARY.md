@@ -29,5 +29,10 @@
   * [wtf](javascript/wtf.md)
 * [TypeScript](typescript.md)
 * [Angular](angular/README.md)
+  * [Modules](angular/modules.md)
+  * [Components](angular/components.md)
   * [View encapsulation](angular/view-encapsulation.md)
+  * [Templates, directives, and data binding](angular/templates-directives-and-data-binding.md)
+  * [Services and dependency injection](angular/services-and-dependency-injection.md)
+  * [Routing](angular/routing.md)
 
