@@ -1,20 +1,5 @@
 # Components
 
-### Directives
-
-#### **Structural directives**
-
-```markup
-<li *ngFor="let hero of heroes"></li>
-<app-hero-detail *ngIf="selectedHero"></app-hero-detail>
-```
-
-#### **Attribute directives**
-
-```markup
-<input [(ngModel)]="hero.name">
-```
-
 ### Components
 
 * `selector`: A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML. For example, if an app's HTML contains `<app-hero-list></app-hero-list>`, then Angular inserts an instance of the `HeroListComponent` view between those tags.
@@ -71,5 +56,20 @@ export class HeroListComponent implements OnInit {
 
 ```markup
 {{interpolated_value | pipe_name}}
+```
+
+### Directives
+
+#### **Structural directives**
+
+```markup
+<li *ngFor="let hero of heroes"></li>
+<app-hero-detail *ngIf="selectedHero"></app-hero-detail>
+```
+
+#### **Attribute directives**
+
+```markup
+<input [(ngModel)]="hero.name">
 ```
 
