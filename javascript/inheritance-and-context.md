@@ -4,8 +4,12 @@
 
 Наследование – это создание новых «классов» на основе существующих.
 
-* Прототипное
-* [Функциональное](https://learn.javascript.ru/functional-inheritance)
+* Псевдо-классовый или Декларотивный
+  * ChildClass extends ParrentClass
+* [Функциональный](https://learn.javascript.ru/functional-inheritance)
+  * ParrentClass.call\(this, params\);
+* Прототипный
+  * ChildClass.prototype = ParrentClass
 
 {% code-tabs %}
 {% code-tabs-item title="Прототипное наследование" %}
