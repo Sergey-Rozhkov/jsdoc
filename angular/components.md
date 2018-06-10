@@ -50,7 +50,7 @@ export class HeroListComponent implements OnInit {
 <input [(ngModel)]="hero.name">
 ```
 
-![Data binding](../.gitbook/assets/image%20%2832%29.png)
+![Data binding](../.gitbook/assets/image%20%2833%29.png)
 
 ### Pipes
 

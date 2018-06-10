@@ -22,5 +22,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Event loop](event-loop.md)
 
+## [10 JavaScript concepts you need to know for interviews](https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce) {#2981}
 
+## [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95) {#6e48}
 

@@ -29,6 +29,7 @@
   * [Decorators](javascript/decorators.md)
   * [Write code](javascript/write-code.md)
   * [Explain code](javascript/explain-code.md)
+  * [RxJs](javascript/rxjs.md)
 * [TypeScript](typescript.md)
 * [Angular](angular/README.md)
   * [Modules](angular/modules.md)
