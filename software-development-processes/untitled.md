@@ -6,10 +6,8 @@
 
 **Git** — распределённая система управления версиями. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.
 
-[Как работает Git](https://habr.com/post/313890/)
-
-[https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)
-
+[Как работает Git](https://habr.com/post/313890/)  
+[https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)  
 [https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
 ### **Git issues**
@@ -36,7 +34,7 @@ $ git reset HEAD \(имя файла\)
 
 $ git checkout – \(имя файла\)
 
-### reset
+#### Reset
 
  Команда `reset` в заранее определенном порядке перезаписывает три дерева Git, останавливаясь тогда, когда вы ей скажете
 
@@ -64,7 +62,7 @@ $ git checkout – \(имя файла\)
 
  Иногда процесс не проходит гладко. Если вы изменили одну и ту же часть одного и того же файла по-разному в двух объединяемых ветках, Git не сможет их чисто объединить.
 
-### **“Git merge” vs “git rebase”**.
+### **“git merge” vs “git rebase”**.
 
 В Git'е есть два способа включить изменения из одной ветки в другую: merge \(слияние\) и rebase \(перемещение\). Наиболее простое решение для объединения веток – это команда **merge**:
 
