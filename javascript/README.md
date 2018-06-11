@@ -4,7 +4,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 # JavaScript
 
-### [Типы данных](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+### Data structures
 
 ### [Objects creating](objects-creating.md)
 
