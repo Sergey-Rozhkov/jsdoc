@@ -32,9 +32,51 @@ anagram('xyz','xyzx'); // false`
 var b = [1, 3, 5, 8, 9, 15];  
 console.log(intersect(a, b));  //  [1,5,9]`
 
-Напишите реализацию паттерна Module
+Напишите код функции **isMonoArr** которая проверяет массив на монотонность
+
+```javascript
+var a1 = [1,1,2]; // true
+var a2 = [3,2,0]; // true
+var a3 = [1,1,1]; // true
+var a4 = [1,2,0]; // false
+var a5 = [1,2,3,1,2,3]; // false
+var a6 = [4,1,1,4]; // false
+
+console.log(isMonoArr(a1));
+console.log(isMonoArr(a2));
+console.log(isMonoArr(a3));
+console.log(isMonoArr(a4));
+console.log(isMonoArr(a5));
+console.log(isMonoArr(a6));
+
+function isMonoArr(arr) {
+  if (arr.length < 3) {
+    return true;
+  }
+  var x = 'same';
+  for (var i=0; i<arr.length; i++) {
+    if (arr[i]>arr[i+1]) {
+      if (x === 'inc') {
+        return false;
+      } else {
+        x = 'dec';
+      }
+    } else if (arr[i]<arr[i+1]) {
+      if (x === 'dec') {
+        return false;
+      } else {
+        x = 'inc';
+      }
+    }
+  }
+
+  return true;
+}
+```
 
 Напишите реализацию паттерна Singleton
 
 Напишите реализацию паттерна Factory
+
+Напишите реализацию паттерна Module
 
