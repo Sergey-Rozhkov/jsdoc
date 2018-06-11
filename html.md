@@ -5,8 +5,9 @@
 * [**HTML**](https://ru.wikipedia.org/wiki/HTML) \(HyperText Markup Language — «язык гипертекстовой разметки»\) — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке **HTML** \(или XHTML\). 
 * [**XHTML**](https://ru.wikipedia.org/wiki/XHTML) является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.
 
+{% code-tabs %}
+{% code-tabs-item title="Структура HTML-документа" %}
 ```markup
-Структура HTML-документа
 <!DOCTYPE html>
 <html>
    <head>
@@ -22,6 +23,8 @@
    </body>
 </html>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Версии HTML
 
