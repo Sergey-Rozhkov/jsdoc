@@ -4,7 +4,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 # JavaScript
 
-### Data structures
+### [Data structures](data-structures.md)
 
 ### [Objects creating](objects-creating.md)
 
