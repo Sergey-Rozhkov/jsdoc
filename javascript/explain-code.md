@@ -50,15 +50,15 @@ let f = i => j => j ? f(i + j) : i
 var a = 1;
 
 function foo() {
-  console.log(this.a);
+	console.log(a);
 }
 
-function foo2() {
-  var a = 2;
-  foo();
+function bar() {
+    var a = 2;
+    foo();
 }
 
-foo2();
+bar(); // ???
 ```
 
 ```javascript
@@ -101,21 +101,6 @@ console.log(3);
 ```
 
 ```javascript
-var a = 1;
-
-function foo() {
-	console.log(a);
-}
-
-function bar() {
-    var a = 2;
-    foo();
-}
-
-bar(); // ???
-```
-
-```javascript
 function test() { 
     foo();
     bar();
@@ -147,20 +132,5 @@ console.log(c[a], c[b]); // ???
 for (var i = 0; i < 10; i++) {
 	setTimeout(function(){console.log(i)}, 100);
 }
-```
-
-```javascript
-var a = 1;
-
-function foo(){
-  console.log(a);
-}
-
-function bar(){
-  var a = 2;
-  foo();
-}
-
-bar(); // ???
 ```
 
