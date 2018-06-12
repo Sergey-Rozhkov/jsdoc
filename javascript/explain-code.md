@@ -47,6 +47,16 @@ let f = i => j => j ? f(i + j) : i
 ```
 
 ```javascript
+var x = 1; 
+console.log(x); // ??? 
+if (true) { 
+    var x = 2; 
+    console.log(x); // ???
+} 
+console.log(x); // ???
+```
+
+```javascript
 var a = 1;
 
 function foo() {
@@ -80,16 +90,6 @@ function clear(obj) {
 
 clear(a);
 console.log(a); // ???
-```
-
-```javascript
-var x = 1; 
-console.log(x); // ??? 
-if (true) { 
-    var x = 2; 
-    console.log(x); // ???
-} 
-console.log(x); // ???
 ```
 
 ```javascript
