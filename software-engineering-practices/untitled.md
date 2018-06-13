@@ -1,18 +1,12 @@
 # Code Standards & Code Review Process
 
-* Code Standards
-* Code Smells
-* Refactoring
-* Code Review Process & Experience
+## Code Standards
+
+Where coding conventions have been specifically designed to produce high-quality code, and have then been formally adopted, they then become coding standards. Specific styles, irrespective of whether they are commonly adopted, do not automatically produce good quality code. It is only if they are designed to produce good quality code that they actually result in good quality code being produced, i.e., they must be very logical in every aspect of their design - every aspect justified and resulting in quality code being produced.
 
 ## Code Conventions
 
-**Coding conventions** are a set of guidelines for a specific [programming language](https://en.wikipedia.org/wiki/Programming_language) that recommend [programming style](https://en.wikipedia.org/wiki/Programming_style), practices, and methods for each aspect of a program written in that language. These conventions usually cover file organization, [indentation](https://en.wikipedia.org/wiki/Indent_style), [comments](https://en.wikipedia.org/wiki/Comment_%28computer_programming%29), [declarations](https://en.wikipedia.org/wiki/Declaration_%28computer_science%29), [statements](https://en.wikipedia.org/wiki/Statement_%28programming%29), [white space](https://en.wikipedia.org/wiki/Whitespace_%28computer_science%29), [naming conventions](https://en.wikipedia.org/wiki/Identifier_naming_convention), [programming practices](https://en.wikipedia.org/wiki/Best_Coding_Practices), [programming principles](https://en.wikipedia.org/wiki/Category:Programming_principles), [programming rules of thumb](https://en.wikipedia.org/wiki/Category:Programming_rules_of_thumb), architectural best practices, etc. These are guidelines for [software structural quality](https://en.wikipedia.org/wiki/Software_quality_model). [Software programmers](https://en.wikipedia.org/wiki/Programmer) are highly recommended to follow these guidelines to help improve the [readability](https://en.wikipedia.org/wiki/Readability) of their [source code](https://en.wikipedia.org/wiki/Source_code) and make [software maintenance](https://en.wikipedia.org/wiki/Software_maintenance) easier. Coding conventions are only applicable to the human maintainers and [peer reviewers](https://en.wikipedia.org/wiki/Peer_review) of a software project. Conventions may be formalized in a documented set of rules that an entire team or company follows, or may be as informal as the habitual coding practices of an individual. Coding conventions are not enforced by [compilers](https://en.wikipedia.org/wiki/Compiler).
-
-## Code Standards
-
-Where coding conventions have been specifically designed to produce high-quality code, and have then been formally adopted, they then become coding standards. Specific styles, irrespective of whether they are commonly adopted, do not automatically produce good quality code. It is only if they are designed to produce good quality code that they actually result in good quality code being produced, i.e., they must be very logical in every aspect of their design - every aspect justified and resulting in quality code being produced.  
-
+**Coding conventions** are a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language. These conventions usually cover file organization, indentation, comments, declarations, statements, white space, naming conventions, programming practices, programming principles, programming rules of thumb, architectural best practices, etc. These are guidelines for software structural quality. Software programmers are highly recommended to follow these guidelines to help improve the readability of their source code and make software maintenance easier. Coding conventions are only applicable to the human maintainers and peer reviewers of a software project. Conventions may be formalized in a documented set of rules that an entire team or company follows, or may be as informal as the habitual coding practices of an individual. Coding conventions are not enforced by compilers.
 
 ## Refactoring
 

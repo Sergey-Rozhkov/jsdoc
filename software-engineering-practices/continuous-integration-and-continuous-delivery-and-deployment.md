@@ -1,19 +1,10 @@
 # Continuous Integration & Continuous Delivery & Deployment
 
-* [http://qaat.ru/kakaya-raznica-mezhdu-continuous-delivery-continuous-deployment-i-continuous-integration/](http://qaat.ru/kakaya-raznica-mezhdu-continuous-delivery-continuous-deployment-i-continuous-integration/)
-* TFS, TeamCity, Jenkins
-* Build modes
-* Pull/Merge requests validation
-* SonarQube
-* jslint \ tslint rules
-* Tests running
-* Build files transfer
-* Server build version update
-* Notifications
+[Какая разница между Continuous Delivery, Continuous Deployment и Continuous Integration](http://qaat.ru/kakaya-raznica-mezhdu-continuous-delivery-continuous-deployment-i-continuous-integration/)
 
-## 
+![](../.gitbook/assets/image.png)
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 **Continuous Delivery** \(непрерывная доставка\) — это серия практик, направленных на то, чтобы обновления программного обеспечения происходили практически постоянно. Обеспечивает постоянный выпуск обновлений пользователям.
 
@@ -36,7 +27,7 @@ When it comes to best practices for TFS I would love to point you to all the [gu
 
 ## TeamCity vs Jenkins
 
- Both **Jenkins** and **TeamCity** are continuous integration tools that serve many of the same purposes. Jenkins is an open source tool, while TeamCity is a proprietary offering from JetBrains. Jenkins is older than TeamCity, so it has a larger community and wider use in general; it appears in far more stacks than its competitor. TeamCity is considered by users to be easier to configure and more straightforward to use, while Jenkins is appreciated for its rich set of plugins and integrations.
+Both **Jenkins** and **TeamCity** are continuous integration tools that serve many of the same purposes. Jenkins is an open source tool, while TeamCity is a proprietary offering from JetBrains. Jenkins is older than TeamCity, so it has a larger community and wider use in general; it appears in far more stacks than its competitor. TeamCity is considered by users to be easier to configure and more straightforward to use, while Jenkins is appreciated for its rich set of plugins and integrations.
 
 ## Build modes
 
@@ -48,7 +39,7 @@ When it comes to best practices for TFS I would love to point you to all the [gu
 
 ## SonarQube {#firstHeading}
 
- Платформа с открытым исходным кодом для непрерывного анализа \([англ.](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA) continuous inspection\) и измерения качества кода.
+Платформа с открытым исходным кодом для непрерывного анализа \([англ.](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA) continuous inspection\) и измерения качества кода.
 
  SonarQube измеряет качество программного кода в соответствии с семью показателями \(и соответствующими [метриками](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)\) [качества программного обеспечения](https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F), которые разработчики называют [англ.](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA) Seven Axes of Quality.
 
@@ -62,29 +53,17 @@ When it comes to best practices for TFS I would love to point you to all the [gu
 
 ## JSLint
 
- **JSLint** — это [статический анализатор кода](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%BA%D0%BE%D0%B4%D0%B0) с [веб-интерфейсом](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81) для программ на языке [JavaScript](https://ru.wikipedia.org/wiki/JavaScript), проверяющий их соответствие [стандартам оформления кода](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82_%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BA%D0%BE%D0%B4%D0%B0), разработанный [Дугласом Крокфордом](https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%BE%D0%BA%D1%84%D0%BE%D1%80%D0%B4,_%D0%94%D1%83%D0%B3%D0%BB%D0%B0%D1%81).
+**JSLint** — это статический анализатор кода с веб-интерфейсом для программ на языке JavaScript, проверяющий их соответствие стандартам оформления кода, разработанный Дугласом Крокфордом.
 
-### Основные требования к коду
+## Tests
 
-*  Глобальные и локальные переменные  Использование var не более одного раза для каждого локального пространства имен.
-*  Точка с запятой  Точки с запятой ставятся после каждой инструкции. Исключения: for, function, if, switch, try и while.
-*  Перенос длинной строки  Строка более 80 символов — плохо.
-*  Обязательные блоки  Строго обязательно использовать блок \(оформляется фигурными скобками\) при использовании if, for и других инструкций.
-*  Конструкции языка  **for in**  SLint требует чтобы тело такого цикла в обязательном порядке было обернуто блоком if.  `for (name in object) {       if (object.hasOwnProperty(name)) { .... }   }`
-
-## Tests running
-
-![](../.gitbook/assets/image%20%2835%29.png)
-
-## Build files transfer
-
-?
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ## **Server build version update**
 
-```text
-https://ru.wikipedia.org/wiki/%D0%9D%D1%83%D0%BC%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F
-```
+[https://ru.wikipedia.org/wiki/Нумерация\_версий\_программного\_обеспечения](https://ru.wikipedia.org/wiki/Нумерация_версий_программного_обеспечения)
+
+
 
 
 
