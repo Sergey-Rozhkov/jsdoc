@@ -3,7 +3,7 @@
 * [Initial page](README.md)
 * [Software Development Methodology](software-development-methodology.md)
 * [Software Development Processes](software-development-processes/README.md)
-  * [Bug tracking systems](software-development-processes/bug-tracking-systems.md)
+  * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
   * [Version Control System](software-development-processes/untitled.md)
   * [Estimations](software-development-processes/estimations.md)
 * [Software Engineering Practices](software-engineering-practices/README.md)
