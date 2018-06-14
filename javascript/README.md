@@ -6,7 +6,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Data structures](data-structures.md)
 
-### [Objects creating](objects-creating.md)
+### [Objects creating](objects.md)
 
 ### [Passing by value and by reference](passing-by-value-and-by-reference.md)
 

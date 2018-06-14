@@ -36,8 +36,9 @@ console.log('f');
 ```javascript
 Promise.resolve('BatMan')
     .then(function (val) {
-        console.log(val);
-        throw new Error();
+        console.log('then', val);
+        throw new Error('Error happen');
+        return 'OMG!';
     })
     .then((val) => console.log('then', val))
     .catch((val) => {
@@ -48,12 +49,31 @@ Promise.resolve('BatMan')
     .then(firstHandler, secondHandler)
     .then(firstHandler, secondHandler);
 
-function firstHandler() {
-    console.log('first');
+function firstHandler(val) {
+    console.log('first', val);
 }
 
-function secondHandler() {
-    console.log('second');
+function secondHandler(val) {
+    console.log('second', val);
 }
 ```
+
+{% code-tabs %}
+{% code-tabs-item title="Функция promiseTimeout" %}
+```javascript
+function promiseTimeout(value, timer) {
+  var cb = function (resolve, reject) {
+    setTimeout(() => {
+      resolve(value);
+    }, timer);
+  };
+
+  return new Promise(cb);
+}
+
+promiseTimeout('TWO', 2000).then(data => console.log(data));
+promiseTimeout('ONE', 1000).then(data => console.log(data));
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 

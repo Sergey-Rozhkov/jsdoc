@@ -1,23 +1,34 @@
-# Objects creating
+# Objects
+
+
+
+* [Свойства и Методы конструктора Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
+* [Свойства и](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype#Properties) [Методы экземпляров Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype#Methods)
 
 #### Способы создания
 
 * Литеральная нотация
 * Оператор `new` - создает экземпляр объекта, встроенного или определенного пользователем, имеющего конструктор
-* Метод `Object.create` - создаёт новый объект с указанными объектом прототипа и свойствами.
+* Метод `Object.create` - создаёт новый объект с указанными объектом прототипа и свойствами
 * Конструкторы объектов
 
 {% code-tabs %}
-{% code-tabs-item title="Способы создания объекта" %}
+{% code-tabs-item title="Способы создания обьекта" %}
 ```javascript
 const a = {};
-
+​
 const b = new Object();
-
+​
 const c = Object.create(null);
-
+​
 function User() {}
 const d = new User();
+
+const o = {
+    property: function ([parameters]) {},
+    get property() {},
+    set property(value) {}
+};
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -51,19 +62,18 @@ Object.myCreate = function(prototype, descriptors) {
 ```javascript
 function Article() {
   Article.count++;
-
   //...
 }
 Article.count = 0;
 
 Article.showCount = function() {
-  alert( this.count ); // (1)
+  alert( this.count );
 }
 
 // использование
 new Article();
 new Article();
-Article.showCount(); // (2)
+Article.showCount();
 ```
 
 #### Фабричные методы
@@ -84,7 +94,6 @@ function User(userData) {
 }
 
 // Использование
-
 var guest = new User();
 guest.sayHi(); // Аноним
 
