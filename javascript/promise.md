@@ -21,19 +21,6 @@ new Promise(function(resolve, reject) { ... });
 ```
 
 ```javascript
-var bluebird = require('bluebird');
-
-Promise.reject('a')
-  .catch(p => p + 'b')
-  .catch(p => p + 'c')
-  .then(p => p + 'd')
-  .finally(p => p + 'e')
-  .then(p => console.log(p));
-  
-console.log('f');
-```
-
-```javascript
 Promise.resolve('BatMan')
     .then(function (val) {
         console.log('then', val);
@@ -58,6 +45,17 @@ function secondHandler(val) {
 }
 ```
 
+```javascript
+Promise.reject('a')
+  .catch(p => p + 'b')
+  .catch(p => p + 'c')
+  .then(p => p + 'd')
+  .finally(p => p + 'e')
+  .then(p => console.log(p));
+  
+console.log('f');
+```
+
 {% code-tabs %}
 {% code-tabs-item title="Функция promiseTimeout" %}
 ```javascript
@@ -76,4 +74,31 @@ promiseTimeout('ONE', 1000).then(data => console.log(data));
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+```javascript
+Promise.reject('start')
+    .finally(val => {
+        console.log('finally-1', val);
+        return 'one';
+    })
+    .catch(val => {
+        console.log('catch-2', val);
+        return 'two';
+    })
+    .finally(val => {
+        console.log('finally-3', val);
+        return 'three';
+    })
+    .then(val => {
+        console.log('then-4', val);
+        return 'four';
+    })
+    .finally(val => {
+        console.log('finally-5', val);
+        return 'five';
+    })
+    .then(val => console.log('result', val));
+
+console.log('finish');
+```
 
