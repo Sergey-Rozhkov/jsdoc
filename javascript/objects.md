@@ -1,11 +1,9 @@
 # Objects
 
-
-
 * [Свойства и Методы конструктора Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 * [Свойства и](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype#Properties) [Методы экземпляров Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype#Methods)
 
-#### Способы создания
+### Способы создания
 
 * Литеральная нотация
 * Оператор `new` - создает экземпляр объекта, встроенного или определенного пользователем, имеющего конструктор
@@ -57,7 +55,7 @@ Object.myCreate = function(prototype, descriptors) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### Статические методы и свойства
+### Статические методы и свойства
 
 ```javascript
 function Article() {
@@ -76,7 +74,7 @@ new Article();
 Article.showCount();
 ```
 
-#### Фабричные методы
+### Фабричные методы
 
 ```javascript
 function User(userData) {

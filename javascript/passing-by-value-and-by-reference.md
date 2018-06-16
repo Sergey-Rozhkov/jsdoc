@@ -1,7 +1,5 @@
 # Passing by value and by reference
 
-
-
 ```javascript
 (function(a) {
   arguments[0] = 10;
@@ -36,11 +34,13 @@ console.log('guest', guest.attributes.isAdmin);
 var obj = {
   a: 1
 };
+
 (function(obj) {
   obj = {
     a: 2
   };
 })(obj);
+
 console.log(obj.a);
 ```
 
