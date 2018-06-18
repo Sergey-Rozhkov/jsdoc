@@ -20,6 +20,8 @@ new Promise(executor);
 new Promise(function(resolve, reject) { ... });
 ```
 
+### Объясните код
+
 ```javascript
 Promise.resolve('BatMan')
     .then(function (val) {
@@ -56,25 +58,6 @@ Promise.reject('a')
 console.log('f');
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Функция promiseTimeout" %}
-```javascript
-function promiseTimeout(value, timer) {
-  var cb = function (resolve, reject) {
-    setTimeout(() => {
-      resolve(value);
-    }, timer);
-  };
-
-  return new Promise(cb);
-}
-
-promiseTimeout('TWO', 2000).then(data => console.log(data));
-promiseTimeout('ONE', 1000).then(data => console.log(data));
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
 ```javascript
 Promise.reject('start')
     .finally(val => {
@@ -101,4 +84,23 @@ Promise.reject('start')
 
 console.log('finish');
 ```
+
+{% code-tabs %}
+{% code-tabs-item title="Функция promiseTimeout" %}
+```javascript
+function promiseTimeout(value, timer) {
+  var cb = function (resolve, reject) {
+    setTimeout(() => {
+      resolve(value);
+    }, timer);
+  };
+
+  return new Promise(cb);
+}
+
+promiseTimeout('TWO', 2000).then(data => console.log(data));
+promiseTimeout('ONE', 1000).then(data => console.log(data));
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 

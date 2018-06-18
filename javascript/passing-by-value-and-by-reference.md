@@ -1,5 +1,7 @@
 # Passing by value and by reference
 
+### Объясните код
+
 ```javascript
 (function(a) {
   arguments[0] = 10;
@@ -22,7 +24,7 @@ User.prototype.attributes = {
 };
 
 var admin = new User("Sam"),
-  guest = new User("Bob");
+    guest = new User("Bob");
 
 admin.attributes.isAdmin = true;
 
@@ -41,7 +43,7 @@ var obj = {
   };
 })(obj);
 
-console.log(obj.a);
+console.log(obj.a); // ???
 ```
 
 ```javascript
@@ -52,6 +54,18 @@ var a = {};
     a = null;
 })( a );
 
-console.log(a);
+console.log(a); // ???
+```
+
+```javascript
+var a = {};
+
+function clear(obj) {
+  obj.foo = 123;
+  obj = null; 
+}
+
+clear(a);
+console.log(a); // ???
 ```
 

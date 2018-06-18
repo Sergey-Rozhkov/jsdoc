@@ -22,9 +22,10 @@ SuperCar.prototype.makeSound = function(){ console.log(this.wave); };
 function Car(color) {
     this.color = color;
 }
+
+// Car.prototype = Object.create(SuperCar.prototype);
 Car.prototype = new SuperCar();
 Car.prototype.sayYes = function(){ console.log("Yes!"); };
-// Car.prototype = Object.create(SuperCar.prototype);
 
 var obj = new Car('red');
 ```
@@ -153,5 +154,34 @@ var double = mul.bind(null, 2); // контекст фиксируем null, о�
 alert( double(3) ); // = mul(2, 3) = 6
 alert( double(4) ); // = mul(2, 4) = 8
 alert( double(5) ); // = mul(2, 5) = 10
+```
+
+### Объясните код
+
+```javascript
+var obj = {
+  prop: 10,
+  fnc: function() {
+    return this.prop; 
+  }
+}
+obj.fnc();  // ???
+var fnc = obj.fnc;
+fnc();      // ???
+```
+
+```javascript
+var obj = {
+    fnc: function () {
+        console.log(this.prop);
+    },
+    prop: 1
+};
+obj.fnc.prop = 2;
+obj.fnc();  //  ???
+var fn = obj.fnc;
+fn();       //  ???
+obj.prop = 2;
+obj.fnc();  //  ???
 ```
 
