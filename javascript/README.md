@@ -8,7 +8,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Objects creating](objects.md)
 
-### [Passing by value and by reference](passing-by-value-and-by-reference.md)
+### Value vs. Reference
 
 ### [Set, Map, WeakSet и WeakMap](https://learn.javascript.ru/set-map)
 
@@ -21,6 +21,8 @@ description: 'Однопоточный, не блокирующий, парал�
 ### [Promise](promise.md)
 
 ### [Event loop](event-loop.md)
+
+### [Types conversion](types-conversion.md)
 
 [10 JavaScript concepts you need to know for interviews](https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce)  
 [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)

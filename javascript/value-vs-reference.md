@@ -1,6 +1,42 @@
-# Passing by value and by reference
+# Value vs Reference
 
 ### Объясните код
+
+```javascript
+var obj = {
+    innerObj: {
+        x: 9
+    }
+};
+​
+var z = obj.innerObj;
+​
+z.x = 25;
+​
+console.log(obj.innerObj.x);
+```
+
+```javascript
+var obj = {
+    arr: [{ x: 17 }]
+};
+​
+var z = obj.arr;
+​
+z = [{ x: 25 }];
+​
+console.log(obj.arr[0].x);
+```
+
+```javascript
+var obj = {
+    arr: []
+};
+​
+obj.arr.push(17);
+​
+console.log(obj.arr === [17]);
+```
 
 ```javascript
 (function(a) {

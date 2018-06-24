@@ -23,13 +23,5 @@ c[b] = 345;
 console.log(c[a], c[b]); // ???
 ```
 
-```javascript
-'b' + 'a' + + 'a'
-```
 
-```javascript
-for (var i = 0; i < 10; i++) {
-	setTimeout(function(){console.log(i)}, 100);
-}
-```
 
