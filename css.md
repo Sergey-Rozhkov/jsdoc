@@ -1,3 +1,7 @@
+---
+description: Cascading Style Sheets
+---
+
 # CSS
 
 [**CSS**](https://ru.wikipedia.org/wiki/CSS) \(Cascading Style Sheets — каскадные таблицы стилей\) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
