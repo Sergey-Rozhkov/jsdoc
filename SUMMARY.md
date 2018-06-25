@@ -19,7 +19,7 @@
   * [Inheritance and context](javascript/inheritance-and-context.md)
   * [Closures](javascript/closures.md)
   * [Hoisting and types](javascript/hoisting-and-types.md)
-  * [ES6 features](javascript/es6-features.md)
+  * [ES features](javascript/es-features.md)
   * [Promise](javascript/promise.md)
   * [Event loop](javascript/event-loop.md)
   * [Decorators](javascript/decorators.md)
