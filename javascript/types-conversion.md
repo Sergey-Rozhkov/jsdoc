@@ -1,6 +1,25 @@
 # Types conversion
 
 ```javascript
+var a = {key: 'foo'};
+var b = {key: 'bar'};
+var c = {};
+
+c[a] = 123; 
+c[b] = 345; 
+console.log(c[a], c[b]); // ???
+```
+
+```javascript
+var a = 42;
+var b = "foo";
+
+a < b; // ?
+a > b; // ?
+a == b; // ?
+```
+
+```javascript
 const bool = new Boolean(false);
 if (bool) console.log(bool);
 if (bool == false) console.log(bool);

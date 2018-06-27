@@ -42,15 +42,18 @@ console.log('log two');
 ```javascript
 console.log('script start');
 setTimeout(function () {
-    console.log('setTimeout');
-}, 0);
+    console.log('setTimeout 1000');
+}, 1000);
 Promise.resolve()
     .then(function () {
-        console.log('promise1');
+        console.log('promise one');
     })
     .then(function () {
-        console.log('promise2');
+        console.log('promise two');
     });
+setTimeout(function () {
+    console.log('setTimeout 0');
+}, 0);    
 console.log('script end');
 ```
 

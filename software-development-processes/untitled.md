@@ -25,9 +25,9 @@ description: Система контроля версий (Version Control Syste
 
 Команда `reset` в заранее определенном порядке перезаписывает три дерева Git, останавливаясь тогда, когда вы ей скажете
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 ### **“git merge” vs “git rebase”**.
 

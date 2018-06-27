@@ -8,7 +8,7 @@ description: 'Однопоточный, не блокирующий, парал�
 
 ### [Objects creating](objects.md)
 
-### Value vs. Reference
+### [Value vs. Reference](./#value-vs-reference)
 
 ### [Set, Map, WeakSet и WeakMap](https://learn.javascript.ru/set-map)
 

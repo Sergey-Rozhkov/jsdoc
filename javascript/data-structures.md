@@ -4,7 +4,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 
 # Data structures
 
-### Типы данных {#Типы_данных}
+### Data types {#Типы_данных}
 
 * 6 типов данных являются примитивами:
   * [Boolean](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Boolean) \(Булев, Логический тип\)
@@ -17,7 +17,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 
 Все типы данных в JavaScript, кроме объектов, являются иммутабельными \(значения не могут быть модифицированы, а только перезаписаны новым полным значением\). Например, в отличии от C, где строку можно по символьно корректировать, в JavaScript строки пересоздаются только полностью. Значения таких типов называются "примитивными значениями".
 
-### Объекты
+### Objects
 
 **Свойство-значение**  
 Ассоциирует ключ со значением, и имеет следующие атрибуты:
@@ -39,7 +39,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 | \[\[Enumerable\]\] | Boolean | Если `true`, свойство будет перечислено в цикле [for...in](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in). | false |
 | \[\[Configurable\]\] | Boolean | Если `false`, то свойство не может быть удалено, и не может быть преобразовано в свойство-значение. | false |
 
-### Set, Map, WeakSet и WeakMap
+### Set and Map
 
 Эти наборы данных используют ссылку на объект в качестве ключа, и введены в JavaScript с приходом ECMAScript Edition 6. [`Set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set) и [`WeakSet`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) являют собой набор уникальных объектов, в то время как [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map) и [`WeakMap`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) ассоциируют с объектом \(выступающим в качестве ключа\) некоторое значение. Разница между Map и WeakMap заключается в том, что только у Map ключи являются перечисляемыми. Это позволяет оптимизировать сборку мусора для WeakMap.
 

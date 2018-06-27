@@ -22,7 +22,7 @@ const c = Object.create(null);
 function User() {}
 const d = new User();
 
-const o = {
+const e = {
     property: function ([parameters]) {},
     get property() {},
     set property(value) {}

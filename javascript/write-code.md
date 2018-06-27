@@ -13,6 +13,10 @@ firstNonRepeatingLetter('Go hang a salami, I\'m a lasagna hog!') === ','`
 sum(1)(2)(3)() // 6   
 sum(2)(2)(2)(2)(2)() // 10`
 
+```javascript
+let f = i => j => j ? f(i + j) : i
+```
+
 Напишите код функции **myFunc**  
 `myFunc(sum)(2)(3); // 5  
 myFunc(mul)(2)(3); // 6`
