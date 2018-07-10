@@ -4,7 +4,10 @@
 * [Software Engineering Practices](software-engineering-practices/README.md)
   * [Architecture knowledge](software-engineering-practices/architecture-knowledge.md)
   * [Code Standards & Code Review Process](software-engineering-practices/untitled.md)
+  * [Algorithms and data structures](software-engineering-practices/algorithms-and-data-structures.md)
   * [Continuous Integration & Continuous Delivery & Deployment](software-engineering-practices/continuous-integration-and-continuous-delivery-and-deployment.md)
+  * [Troubleshooting/Logging/Monitoring](software-engineering-practices/troubleshooting-logging-monitoring.md)
+  * [Testing processes](software-engineering-practices/testing-processes.md)
 * [Software Development Processes](software-development-processes/README.md)
   * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
   * [Version Control System](software-development-processes/untitled.md)
@@ -39,5 +42,6 @@
   * [WebSocket](progresive-web-application/websocket.md)
   * [Web App Manifest](progresive-web-application/web-app-manifest.md)
   * [Service Worker](progresive-web-application/service-worker.md)
+  * [RESTful API](progresive-web-application/restful-api.md)
 * [Vue.js](vue.js.md)
 

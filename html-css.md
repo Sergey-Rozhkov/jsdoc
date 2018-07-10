@@ -4,6 +4,22 @@ description: HyperText Markup Language & Cascading Style Sheets
 
 # HTML & CSS
 
+* HTML
+  * HTML elements
+  * HTML 5
+  * Doctypes
+* CSS Basics
+  * CSS box model & visual formatting \(position, display, floating\)
+  * Selectors, selector priorities
+  * CSS Frameworks
+* CSS Advance
+  * CSS preprocesors
+  * CSS Responsive design
+  * Selectors, impact on page rendering
+  * CSS 3 \(Custom fonts, animations, box-shadow, etc\)
+  * Optimization
+  * Browsers compabilites
+
 ## HTML
 
 * [**HTML**](https://ru.wikipedia.org/wiki/HTML) \(HyperText Markup Language — «язык гипертекстовой разметки»\) — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке **HTML** \(или XHTML\). 
