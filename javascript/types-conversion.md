@@ -19,6 +19,20 @@ console.log(c[a], c[b]); // ???
 ```
 
 ```javascript
+var foo = {
+	toString: function () {
+		return "foo";
+	},
+	valueOf: function () {
+		return 5;
+	}
+};
+
+alert(foo + "bar"); // ???
+alert([foo, "bar"].join("")); // ???
+```
+
+```javascript
 var a = 42;
 var b = "foo";
 
@@ -31,6 +45,20 @@ a == b; // ?
 const bool = new Boolean(false);
 if (bool) console.log(bool);
 if (bool == false) console.log(bool);
+```
+
+```javascript
+var foo = {
+	toString: function () {
+		return 5;
+	},
+	valueOf: function () {
+		return "foo";
+	}
+};
+alert(foo.toString() + 1); // 6 (bad!)
+alert(foo + 1); // "foo1" (no good!)
+alert(+foo); // NaN (the worst!)
 ```
 
 ```javascript

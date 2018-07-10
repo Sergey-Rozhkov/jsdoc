@@ -5,8 +5,7 @@
 * _ожидание \(**pending**\)_: начальное состояние, не выполнено и не отклонено.
 * _выполнено \(**fulfilled**\)_: операция завершена успешно.
 * _отклонено \(**rejected**\)_: операция завершена с ошибкой.
-
-Другой термин, описывающий состояние _заданный \(**settled**\)_: обещание выполнено или отклонено, но не находится в состоянии ожидания.
+* _заданный \(**settled**\)_: обещание выполнено или отклонено, но не находится в состоянии ожидания.
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
@@ -17,10 +16,21 @@
 
 ```javascript
 new Promise(executor);
-new Promise(function(resolve, reject) { ... });
+new Promise(function(resolve, reject) { /* ... */ });
 ```
 
 ### Объясните код
+
+```javascript
+Promise.reject('a')
+  .catch(p => p + 'b')
+  .catch(p => p + 'c')
+  .then(p => p + 'd')
+  .finally(p => p + 'e')
+  .then(p => console.log(p));
+  
+console.log('f');
+```
 
 ```javascript
 Promise.resolve('BatMan')
@@ -45,17 +55,6 @@ function firstHandler(val) {
 function secondHandler(val) {
     console.log('second', val);
 }
-```
-
-```javascript
-Promise.reject('a')
-  .catch(p => p + 'b')
-  .catch(p => p + 'c')
-  .then(p => p + 'd')
-  .finally(p => p + 'e')
-  .then(p => console.log(p));
-  
-console.log('f');
 ```
 
 ```javascript

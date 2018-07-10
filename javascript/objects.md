@@ -14,9 +14,7 @@
 {% code-tabs-item title="Способы создания обьекта" %}
 ```javascript
 const a = {};
-​
-const b = new Object();
-​
+​const b = new Object();
 const c = Object.create(null);
 ​
 function User() {}
@@ -106,32 +104,18 @@ knownUser.sayHi(); // Вася
 
 ```javascript
 function SomeClassOne() {
-  this.val = 'One';
+    this.val = 'One';
 }
 
 var o = new SomeClassOne();
 console.log(o.val); // ???
 
 function SomeClassTwo() {
-  this.val = 'Two';
-  return {val: 'Three'};
+    this.val = 'Two';
+    return {val: 'Three'};
 }
 
 o = new SomeClassTwo();
 console.log(o.val); // ???
-```
-
-```javascript
-var a = { b: 1 }, c = Object.create(а);
-
-console.log(c.b); // ?
-delete с.b;
-сonsole.log(c.b); // ?
-delete a.b;
-сonsole.log(с.b); // ?
-a.z = 2;
-сonsole.log(с.z); // ?
-с.z = 3;
-сonsole.log(a.z); // ?
 ```
 

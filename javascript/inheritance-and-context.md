@@ -121,7 +121,7 @@ function Role(role) {
     console.log('Role: ' + role);
   }
 }
-// -- vs --
+// -- vs -- ( what is the difference ?)
 function User(name) {
   this.name = name;
   this.sayName = function() {
@@ -199,11 +199,26 @@ alert( double(5) ); // = mul(2, 5) = 10
 ### Объясните код
 
 ```javascript
+var a = {b: 1},
+    c = Object.create(a);
+
+console.log(c.b); // ?
+delete c.b;
+console.log(c.b); // ?
+delete a.b;
+console.log(c.b); // ?
+a.z = 2;
+console.log(c.z); // ?
+c.z = 3;
+console.log(a.z); // ?
+```
+
+```javascript
 var obj = {
-  prop: 10,
-  fnc: function() {
-    return this.prop; 
-  }
+    prop: 10,
+    fnc: function () {
+        return this.prop;
+    }
 }
 obj.fnc();  // ???
 var fnc = obj.fnc;
@@ -212,10 +227,10 @@ fnc();      // ???
 
 ```javascript
 var obj = {
+    prop: 1,
     fnc: function () {
         console.log(this.prop);
-    },
-    prop: 1
+    }
 };
 obj.fnc.prop = 2;
 obj.fnc();  //  ???
@@ -227,7 +242,9 @@ obj.fnc();  //  ???
 
 ```javascript
 for (var i = 0; i < 10; i++) {
-	setTimeout(function(){console.log(i)}, 100);
+    setTimeout(function () {
+        console.log(i)
+    }, 100);
 }
 ```
 

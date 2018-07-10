@@ -8,12 +8,12 @@
 function getClosure() {
     var canYouSeeMe = "here I am";
     return (function theClosure() {
-        return {canYouSeeIt: canYouSeeMe ? "yes!": "no"};
+        return {canYouSeeIt: canYouSeeMe ? "yes!" : "no"};
     });
 }
 
 var closure = getClosure();
-closure().canYouSeeIt; //"yes!"
+console.log(closure().canYouSeeIt);  // ???
 ```
 
 ```javascript
@@ -30,12 +30,16 @@ function outer() {
 
 ```javascript
 var myVar = 'hello';
+
 function myFunc() {
-    console.log(myVar);
-    var myVar = 0;
-    console.log(myVar);
+    console.log(myVar); // ???
+    var myVar = 'goodbye';
+    console.log(myVar); // ???
 }
+
 myFunc();
-console.log(myVar);     // hello
+console.log(myVar); // ???
 ```
+
+
 

@@ -1,15 +1,15 @@
 # Table of contents
 
 * [Initial page](README.md)
-* [Software Development Methodology](software-development-methodology.md)
-* [Software Development Processes](software-development-processes/README.md)
-  * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
-  * [Version Control System](software-development-processes/untitled.md)
-  * [Estimations](software-development-processes/estimations.md)
 * [Software Engineering Practices](software-engineering-practices/README.md)
   * [Architecture knowledge](software-engineering-practices/architecture-knowledge.md)
   * [Code Standards & Code Review Process](software-engineering-practices/untitled.md)
   * [Continuous Integration & Continuous Delivery & Deployment](software-engineering-practices/continuous-integration-and-continuous-delivery-and-deployment.md)
+* [Software Development Processes](software-development-processes/README.md)
+  * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
+  * [Version Control System](software-development-processes/untitled.md)
+  * [Estimations](software-development-processes/estimations.md)
+* [Software Development Methodology](software-development-methodology.md)
 * [HTML & CSS](html-css.md)
 * [JavaScript](javascript/README.md)
   * [Data structures](javascript/data-structures.md)
@@ -39,4 +39,5 @@
   * [WebSocket](progresive-web-application/websocket.md)
   * [Web App Manifest](progresive-web-application/web-app-manifest.md)
   * [Service Worker](progresive-web-application/service-worker.md)
+* [Vue.js](vue.js.md)
 

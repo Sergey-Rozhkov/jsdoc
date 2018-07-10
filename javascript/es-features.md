@@ -1,6 +1,6 @@
 # ES features
 
-* ECMAscript выходит ежегодно;
+* ECMAScript выходит ежегодно;
 * первые пакеты обновления назывались ES1, ES2, ES3, ES4, ES5;
 * новые выпуски \(начиная с 2015 года\) получили название ES2015, ES2016, ES2017 \(аббревиатура ES + год выпуска\);
 * ECMAScript является стандартом, а JavaScript — это самая популярная реализация этого стандарта. Среди других реализаций можно отметить [SpiderMonkey](https://ru.wikipedia.org/wiki/SpiderMonkey), [V8](https://ru.wikipedia.org/wiki/V8_%28%D0%B4%D0%B2%D0%B8%D0%B6%D0%BE%D0%BA_JavaScript%29) и [ActionScript](https://ru.wikipedia.org/wiki/ActionScript).
@@ -10,17 +10,17 @@
 * `let`, `const` и блочная область видимости
 * Стрелочные функции
 * Параметры по умолчанию
-* Spread/Rest оператор
+* `Spread`/`Rest` оператор
 * Расширение возможностей литералов объекта
 * Восьмеричный и двоичный литералы
 * Деструктуризация массивов и объектов
 * Ключевое слово super для объектов
 * Строковые шаблоны и разделители
 * for...of против for...in
-* Map и WeakMap
-* Set и WeakSet
+* `Map` и `WeakMap`
+* `Set` и `WeakSet`
 * Классы в ES6
-* Тип данных Symbol
+* Тип данных `Symbol`
 * Итераторы
 * Генераторы
 * Промисы

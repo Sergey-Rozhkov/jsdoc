@@ -8,13 +8,45 @@ firstNonRepeatingLetter('a') === 'a'
 firstNonRepeatingLetter('paPA') === ''  
 firstNonRepeatingLetter('Go hang a salami, I\'m a lasagna hog!') === ','`
 
-Напишите код функции **sum**  
+Напишите код функции `sum`, количество слагаемых не ограничено  
 `sum(1)(2)() // 3  
 sum(1)(2)(3)() // 6   
 sum(2)(2)(2)(2)(2)() // 10`
 
 ```javascript
 let f = i => j => j ? f(i + j) : i
+```
+
+```javascript
+const add = (a) => {
+    let sum = a;
+    const func = (b) => {
+        if (b) {
+            sum += b;
+            return func;
+        } else {
+            return sum;
+        }
+    };
+    return func;
+};
+```
+
+Напишите код функции `sum`, количество слагаемых не ограничено  
+`sum(1)(2) // 3  
+sum(1)(2)(3) // 6   
+sum(2)(2)(2)(2)(2) // 10`
+
+```javascript
+const add = (a) => {
+    let sum = a;
+    const func = (b) => {
+        sum += b;
+        return func;
+    };
+    func.valueOf = () => sum;
+    return func;
+};
 ```
 
 Напишите код функции **myFunc**  
