@@ -4,3 +4,5 @@
 
 {% embed data="{\"url\":\"https://learn.javascript.ru/screencast/angular\",\"type\":\"link\",\"title\":\"Скринкаст по Angular\",\"icon\":{\"type\":\"icon\",\"url\":\"https://learn.javascript.ru/img/favicon/apple-touch-icon-precomposed.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://learn.javascript.ru/img/site\_preview\_ru\_1200x630.png\",\"width\":1200,\"height\":630,\"aspectRatio\":0.525}}" %}
 
+{% embed data="{\"url\":\"https://school.rollingscopes.com/\",\"type\":\"link\",\"title\":\"RS \| School\",\"icon\":{\"type\":\"icon\",\"url\":\"https://school.rollingscopes.com/apple-touch-icon.png\",\"aspectRatio\":0}}" %}
+
