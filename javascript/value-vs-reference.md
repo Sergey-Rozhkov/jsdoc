@@ -3,19 +3,7 @@
 ### Объясните код
 
 ```javascript
-var a = {};
-
-function clear(obj) {
-    obj.foo = 123;
-    obj = null;
-}
-
-clear(a);
-console.log(a); // ???
-```
-
-```javascript
-var a = {};
+var а = {};
 
 (function clear(a) {
     a.a = 10;
@@ -65,13 +53,6 @@ var val = (function (a) {
     arguments[0] = 10;
     return a;
 })(5);
-```
-
-```javascript
-var foo = {n: 1};
-var bar = foo;
-foo.x = foo = {n: 2};
-console.log(foo); // ???
 ```
 
 ```javascript

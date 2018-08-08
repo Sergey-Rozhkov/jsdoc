@@ -58,7 +58,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 * HTML 5.1 начал разрабатываться 17 декабря 2012 года. **Рекомендован к применению с 1 ноября 2016 года.**
 * HTML 5.2 был представлен 14 декабря 2017 года.
 
-### HTML5
+### HTML5 - [https://html5test.com/](https://html5test.com/)
 
 Термин имеет два определения:
 
@@ -144,47 +144,47 @@ DOCTYPE - это определение типа документа \(Document T
 {% code-tabs %}
 {% code-tabs-item title="Пример таблицы стилей" %}
 ```css
-   p {
-     background-color: black;
-   }
+p {
+    background-color: black;
+}
 
-   div.warning p {
-     background-color: red;
-   }
+div.warning p {
+    background-color: red;
+}
 
-   div#caution p {
-     background-color: yellow;
-   }
+div#caution p {
+    background-color: yellow;
+}
 
-   body#home .container p {
-     background-color: white;
-   }
+body#home .container p {
+    background-color: white;
+}
 
-   .note {
-     background-color: green;
-   }
+.note {
+    background-color: green;
+}
 
-   a:hover {
-     text-decoration: none;
-   }
+a:hover {
+    text-decoration: none;
+}
 
-   #home p {
-     background-color: blue;
-   }
+#home p {
+    background-color: blue;
+}
 
-   [type="button"] {
-     background-color: green;
-   }
+[type="button"] {
+    background-color: green;
+}
 
-   html body.app div:first-child p .title {
-     display: none;
-   }
+html body.app div:first-child p .title {
+    display: none;
+}
 
-   * {
-     padding: 10px;
-     margin: 10px;
-     background-color: #CCCCCC;
-   }
+* {
+    padding: 10px;
+    margin: 10px;
+    background-color: #CCCCCC;
+}
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

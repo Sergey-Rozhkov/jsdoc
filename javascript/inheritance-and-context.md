@@ -218,7 +218,8 @@ var obj = {
     prop: 10,
     fnc: function () {
         return this.prop;
-    }
+    },
+    fnc: () => this.prop;
 }
 obj.fnc();  // ???
 var fnc = obj.fnc;
