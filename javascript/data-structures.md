@@ -23,7 +23,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 Ассоциирует ключ со значением, и имеет следующие атрибуты:
 
 | Атрибут | Тип | Описание | Значение по умолчанию |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | \[\[Value\]\] | Любой тип JavaScript | Значение, возвращаемое при обращении к свойству. | undefined |
 | \[\[Writable\]\] | Boolean | Если `false`, то \[\[Value\]\] свойства не может быть изменено. | false |
 | \[\[Enumerable\]\] | Boolean | Если `true`, свойство будет перечислено в цикле [for...in](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in). Смотрите подробнее  [Перечисляемость и владение свойствами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Enumerability_and_ownership_of_properties). | false |
@@ -33,7 +33,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 Ассоциирует ключ с одной из двух функций-акцессоров \(геттер и сеттер\) для получения или изменения значения свойства, и имеет следующий атрибуты:
 
 | Атрибут | Тип | Описание | Значение по умолчанию |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | \[\[Get\]\] | Function или undefined | Функция вызывается без параметров, и возвращает значение свойства, каждый раз, когда происходит чтение свойства. Смотрите также [`get`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/get). | undefined |
 | \[\[Set\]\] | Function или undefined | Функция вызывается с одним аргументом, содержащим присваиваемое значение, каждый раз, когда происходит попытка присвоить свойству новое значение. Смотрите также [`set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/set). | undefined |
 | \[\[Enumerable\]\] | Boolean | Если `true`, свойство будет перечислено в цикле [for...in](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in). | false |

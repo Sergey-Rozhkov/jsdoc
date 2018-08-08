@@ -34,3 +34,17 @@
   * `do` - Transparently perform actions or side-effects, such as logging.
   * `toPromise` - Convert observable to promise.
 
+### Hot vs Cold observable
+
+### Code
+
+```javascript
+const sub = new ReplaySubject(2);
+
+sub.next(1);
+sub.next(2);
+sub.next(3);
+
+sub.subscribe(val => console.log(val));
+```
+

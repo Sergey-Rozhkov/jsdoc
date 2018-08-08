@@ -32,7 +32,7 @@ Both **Jenkins** and **TeamCity** are continuous integration tools that serve ma
 ## Build modes
 
 | **Debug mode** | **Release mode** |
-| --- | --- | --- | --- |
+| :--- | :--- |
 | should be bundled | should be unbudled |
 | for debug purposes, cannot be minified | will be minified and will remove all debug statements |
 | it's not necessary to change the version number | bump up the versin number |
@@ -57,7 +57,7 @@ Both **Jenkins** and **TeamCity** are continuous integration tools that serve ma
 
 ## Tests
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 ## **Server build version update**
 

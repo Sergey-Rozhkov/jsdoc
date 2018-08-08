@@ -7,7 +7,7 @@
 * _отклонено \(**rejected**\)_: операция завершена с ошибкой.
 * _заданный \(**settled**\)_: обещание выполнено или отклонено, но не находится в состоянии ожидания.
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 * [`Promise.all(iterable)`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)Возвращает обещание, которое выполнится после выполнения всех обещаний в передаваемом итерируемом аргументе.
 * [`Promise.race(iterable)`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/race)Возвращает обещание, которое будет выполнено или отклонено с результатом исполнения первого выполненного или отклонённого итерируемого обещания.
