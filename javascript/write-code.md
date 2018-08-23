@@ -68,6 +68,14 @@ anagram('xyz','xyzx'); // false`
 var b = [1, 3, 5, 8, 9, 15];  
 console.log(intersect(a, b));  //  [1,5,9]`
 
+```javascript
+function intersect(arr1, arr2) {
+  return arr1.filter((x) => {
+    return arr2.indexOf(x) >= 0;
+  });
+}
+```
+
 Напишите код функции **isMonoArr** которая проверяет массив на монотонность
 
 ```javascript
@@ -107,6 +115,43 @@ function isMonoArr(arr) {
   }
 
   return true;
+}
+```
+
+Напишите код функции **reverse**
+
+```javascript
+function reverse(num, result = 0){
+  if(num < 10) {
+    return result*10 + num;
+  } else {
+    result = result*10 + num%10;
+    
+    return reverse(Math.floor(num / 10), result);
+  }
+}
+
+console.log(reverse(12345));
+```
+
+```javascript
+function reverse(num, result = 0){
+  return (num < 10) 
+    ? result*10 + num
+    : reverse(Math.floor(num / 10), result*10 + num%10);
+}
+
+console.log(reverse(12345));
+```
+
+Напишите функцию `myConcat`
+
+```text
+DoIt(5,2,3) -> '325'
+console.log(DoIt(1, 2, 3, 4, 5));
+
+function DoIt() {
+    return Array.prototype.slice.call(arguments).reduce((sum, val) => '' + sum + val);
 }
 ```
 
