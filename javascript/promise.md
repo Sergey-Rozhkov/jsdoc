@@ -22,6 +22,28 @@ new Promise(function(resolve, reject) { /* ... */ });
 ### Объясните код
 
 ```javascript
+Promise.resolve(Promise.reject()).then(
+  ifResolved => console.log('yes', ifResolved),
+  ifRejected => console.log('no', ifRejected),
+);
+```
+
+```javascript
+var thenable = { then: function(resolve) {
+  resolve("Resolving");
+  console.log("Logging");
+  throw new TypeError("Throwing");
+}};
+
+var p3 = Promise.resolve(thenable);
+p3.then(function(v) {
+  console.log('then', v);
+}, function(e) {
+  console.log('catch', v);
+});
+```
+
+```javascript
 Promise.reject('a')
   .catch(p => p + 'b')
   .catch(p => p + 'c')
