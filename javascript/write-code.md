@@ -146,12 +146,14 @@ console.log(reverse(12345));
 
 Напишите функцию `myConcat`
 
-```text
+```javascript
 DoIt(5,2,3) -> '325'
 console.log(DoIt(1, 2, 3, 4, 5));
 
 function DoIt() {
-    return Array.prototype.slice.call(arguments).reduce((sum, val) => '' + sum + val);
+    return Array.prototype.slice.call(arguments)
+      .reverse()
+      .reduce((sum, val) => '' + sum + val);
 }
 ```
 
