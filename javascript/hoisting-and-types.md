@@ -3,25 +3,11 @@
 ### Объясните код
 
 {% code-tabs %}
-{% code-tabs-item title="function" %}
-```javascript
-function foo() {
-    var x;
-    function x() {}
-    console.log(typeof x);
-};
-foo(); // ???
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-{% code-tabs %}
 {% code-tabs-item title="number" %}
 ```javascript
 function foo() {
-    var x;
     function x() {}
-    x = 1;
+    var x = 1;
     console.log(typeof x);
 };
 foo(); // ???
