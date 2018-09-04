@@ -14,6 +14,17 @@ console.log(a); // ???
 ```
 
 ```javascript
+var а = {a: 1};
+
+(function clear(a) {
+    a.a = 2;
+    a = {a: 3};
+})(a);
+
+console.log(a); // ???
+```
+
+```javascript
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
