@@ -28,6 +28,7 @@
   * [Types conversion](javascript/types-conversion.md)
   * [Write code](javascript/write-code.md)
   * [RxJs](javascript/rxjs.md)
+  * [Event reference](javascript/event-reference.md)
 * [TypeScript](typescript.md)
 * [Angular](angular/README.md)
   * [Modules](angular/modules.md)
