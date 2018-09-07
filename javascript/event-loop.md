@@ -35,7 +35,8 @@ console.log('log two');
     setTimeout(() => console.log(2), 1000);
     setTimeout(() => console.log(3), 0);
     Promise.resolve(true).then(() => console.log(4));
-    console.log(5);
+    setImmediate(() => console.log(5));
+    console.log(6);
 })();
 ```
 
