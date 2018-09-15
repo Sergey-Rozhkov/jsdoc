@@ -2,7 +2,7 @@
 description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures'
 ---
 
-# Data structures
+# Types
 
 ### Data types {#Типы_данных}
 

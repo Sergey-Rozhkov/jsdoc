@@ -1,4 +1,4 @@
-# Hoisting and types
+# Hoisting
 
 ### Объясните код
 

@@ -1,4 +1,0 @@
-# Event reference
-
-{% embed data="{\"url\":\"https://developer.mozilla.org/ru/docs/Web/Events\",\"type\":\"link\",\"title\":\"Event reference\",\"description\":\"События DOM присылаются чтобы уведомить код о том, что интересующие его действия произошли. Каждое событие представляет объект, который базируется на интерфейсе Event и может иметь дополнительные поля и/или функции, позволяющие получить дополнительную информацию о том, что случилось. События могут описывать всё, что угодного от простых действий пользователя до действий автоматизированной системы рассылки уведомлений, создаваемых моделью формирования экрана.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://developer.mozilla.org/static/img/favicon144.e7e21ca263ca.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png\",\"width\":600,\"height\":600,\"aspectRatio\":1}}" %}
-

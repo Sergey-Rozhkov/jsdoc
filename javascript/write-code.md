@@ -53,6 +53,10 @@ const add = (a) => {
 `myFunc(sum)(2)(3); // 5  
 myFunc(mul)(2)(3); // 6`
 
+```javascript
+const myFunc = f => a => b => f(a,b)
+```
+
 Напишите код функции **test**, которая будет проверять корректность расстановки скобок  
 `test('[]()<>') // => true  
 test('[]()<)') // => false  
@@ -70,34 +74,27 @@ console.log(intersect(a, b));  //  [1,5,9]`
 
 ```javascript
 function intersect(arr1, arr2) {
-  return arr1.filter((x) => {
-    return arr2.indexOf(x) >= 0;
-  });
+    // ...
 }
 ```
 
 Напишите код функции **isMonoArr** которая проверяет массив на монотонность
 
 ```javascript
-var a1 = [1,1,2]; // true
-var a2 = [3,2,0]; // true
-var a3 = [1,1,1]; // true
-var a4 = [1,2,0]; // false
-var a5 = [1,2,3,1,2,3]; // false
-var a6 = [4,1,1,4]; // false
-
-console.log(isMonoArr(a1));
-console.log(isMonoArr(a2));
-console.log(isMonoArr(a3));
-console.log(isMonoArr(a4));
-console.log(isMonoArr(a5));
-console.log(isMonoArr(a6));
+console.log(isMonoArr([1,1,2])); // true
+console.log(isMonoArr([3,2,0])); // true
+console.log(isMonoArr([1,1,1])); // true
+console.log(isMonoArr([1,2,0])); // false
+console.log(isMonoArr([1,2,3,1,2,3])); // false
+console.log(isMonoArr([4,1,1,4])); // false
 
 function isMonoArr(arr) {
   if (arr.length < 3) {
     return true;
   }
+  
   var x = 'same';
+  
   for (var i=0; i<arr.length; i++) {
     if (arr[i]>arr[i+1]) {
       if (x === 'inc') {
@@ -118,20 +115,18 @@ function isMonoArr(arr) {
 }
 ```
 
-Напишите код функции **reverse**
+Напишите код функции **reverse** \(без использования строк, массивов, циклов\) ?
 
 ```javascript
+console.log(reverse(12345)); // 54321
+
 function reverse(num, result = 0){
   if(num < 10) {
     return result*10 + num;
   } else {
-    result = result*10 + num%10;
-    
-    return reverse(Math.floor(num / 10), result);
+    return reverse(Math.floor(num / 10), result*10 + num%10);
   }
 }
-
-console.log(reverse(12345));
 ```
 
 ```javascript
@@ -140,17 +135,33 @@ function reverse(num, result = 0){
     ? result*10 + num
     : reverse(Math.floor(num / 10), result*10 + num%10);
 }
-
-console.log(reverse(12345));
 ```
 
-Напишите функцию `myConcat`
+Напишите полифил на функцию `filter`
 
 ```javascript
-DoIt(5,2,3) -> '325'
-console.log(DoIt(1, 2, 3, 4, 5));
+[1,2,3,4].filter((num)=>{ return num > 3}) // >[4]
 
-function DoIt() {
+Array.prototype.filter = function (cb) {
+  var result = [];
+
+  for(const el of this) {
+    if (cb(el)) {
+      result.push(el);
+    }
+  }
+
+  return result;
+}
+```
+
+Напишите функцию `reverse`
+
+```javascript
+reverse(5,2,3) // -> '325'
+reverse(1, 2, 3, 4, 5); // -> '54321'
+
+function reverse() {
     return Array.prototype.slice.call(arguments)
       .reverse()
       .reduce((sum, val) => '' + sum + val);
