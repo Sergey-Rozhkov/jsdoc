@@ -198,6 +198,8 @@ alert( double(5) ); // = mul(2, 5) = 10
 
 ### Объясните код
 
+{% code-tabs %}
+{% code-tabs-item title="Inheritance" %}
 ```javascript
 var a = {b: 1},
     c = Object.create(a);
@@ -212,35 +214,43 @@ console.log(c.z); // ?
 c.z = 3;
 console.log(a.z); // ?
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="Context" %}
 ```javascript
 var obj = {
     prop: 10,
     fnc: function () {
         return this.prop;
     },
-    fnc: () => this.prop;
+    // fnc: () => this.prop;
 }
 obj.fnc();  // ???
 var fnc = obj.fnc;
 fnc();      // ???
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ```javascript
 var obj = {
     prop: 1,
     fnc: function () {
-        console.log(this.prop);
+        return this.prop;
     }
 };
 obj.fnc.prop = 2;
 obj.fnc();  //  ???
 var fn = obj.fnc;
 fn();       //  ???
-obj.prop = 2;
+obj.prop = 3;
 obj.fnc();  //  ???
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="How to fix ?" %}
 ```javascript
 for (var i = 0; i < 10; i++) {
     setTimeout(function () {
@@ -248,4 +258,6 @@ for (var i = 0; i < 10; i++) {
     }, 100);
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
