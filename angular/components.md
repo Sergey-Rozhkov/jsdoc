@@ -2,9 +2,20 @@
 
 ### Components
 
-* `selector`: A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML. For example, if an app's HTML contains `<app-hero-list></app-hero-list>`, then Angular inserts an instance of the `HeroListComponent` view between those tags.
-* `templateUrl`: The module-relative address of this component's HTML template. Alternatively, you can provide the HTML template inline, as the value of the `template` property. This template defines the component's _host view_.
-* `providers`: An array of **dependency injection providers** for services that the component requires. In the example, this tells Angular that the component's constructor requires a `HeroService` instance in order to get the list of heroes to display.
+* Одним из ключевых элементов приложения являются компоненты. Компонент управляет отображением представления на экране. 
+* Чтобы класс мог использоваться в других модулях, он определяется с ключевым словом export.
+* Для создания компонента необходимо импортировать функцию декоратора `@Component` из библиотеки `@angular/core`. Декоратор `@Component` позволяет идентифицировать класс как компонент.
+* Если бы мы не применили декоратор `@Component` к классу AppComponent, то класс AppComponent компонентом бы не считался.
+* Декоратор `@Component` в качестве параметра принимает объект с конфигурацией, которая указывает фреймворку, как работать с компонентом и его представлением.
+
+
+
+* `selector`:Селектор CSS, который сообщает Angular о создании и вставке экземпляра этого компонента везде, где он находит соответствующий тег в шаблоне HTML. Например, если HTML-код приложения содержит`<app-hero-list></app-hero-list>`, затем Angular вставляет экземпляр `HeroListComponent` представления между этими тегами.
+* `templateUrl`: Модуль-относительный адрес HTML-шаблона этого компонента. Кроме того, вы можете предоставить встроенный HTML-шаблон, как значение свойства`template`. Этот шаблон определяет представление хоста компонента.
+  * С помощью свойства template. Шаблон представляет кусок разметки HTML с вкраплениями кода Angular. Фактически шаблон это и есть представление, которое увидит пользователь при работе с приложением.
+  * Каждый компонент должен иметь один шаблон. Однако необязательно определять шаблон напрямую с помощью свойства `template`. Можно вынести шаблон во внешний файл с разметкой html, а для его подключения использовать свойство `templateUrl`.
+  * Шаблон может быть однострочным или многострочным. Если шаблон многострочный, то он заключается в косые кавычки \(\`\), которые стоит отличать от стандартных ординарных кавычек \('\).
+* `providers`: Массив **dependency injection providers** для сервисов, которых требует компонент. В приведенном ниже примере это говорит Angular, что конструктор компонента требует экземпляр`HeroService`, чтобы отобразить список героев.
 
 ```typescript
 @Component({

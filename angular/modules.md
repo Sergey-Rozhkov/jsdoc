@@ -1,10 +1,12 @@
 # Modules
 
-* `declarations`—The _components_, _directives_, and _pipes_ that belong to this NgModule.
-* `exports`—The subset of declarations that should be visible and usable in the _component templates_ of other NgModules.
-* `imports`—Other modules whose exported classes are needed by component templates declared in _this_ NgModule.
-* `providers`—Creators of services that this NgModule contributes to the global collection of services; they become accessible in all parts of the app. \(You can also specify providers at the component level, which is often preferred.\)
-* `bootstrap`—The main application view, called the _root component_, which hosts all other app views. Only the _root NgModule_ should set this `bootstrap` property.
+NgModule представляет функцию-декоратора, которая принимает объект, свойства которого описывают метаданные модуля. Наиболее важные свойства:
+
+* **declarations**: Классы представлений \(view classes\), которые принадлежат модулю. Angular имеет три типа классов представлений: компоненты \(components\), директивы \(directives\), каналы \(pipes\).
+* **exports**: Набор классов представлений, которые должны быть видимы и использоваться в шаблонах компонентов из других модулей.
+* **imports**: Другие модули, классы которых необходимы для шаблонов компонентов из текущего модуля.
+* **providers**: Классы, создающие сервисы, которые этот NgModule вносит в глобальный набор услуг. Они становятся доступными во всех частях приложения. \(Вы также можете указать providers на уровне компонентов, что часто является предпочтительным.\)
+* **bootstrap**: The main application view. Корневой компонент, который вызывается по умолчанию при загрузке приложения. Только корневой NgModule должен установить bootstrap.
 
 ```typescript
 import { NgModule }      from '@angular/core';
