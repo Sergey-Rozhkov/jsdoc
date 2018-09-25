@@ -30,6 +30,14 @@ console.log('log two');
 ```
 
 ```javascript
+console.log(1);
+setTimeout(() => console.log(2), 1000);
+setTimeout(() => console.log(3), 0);
+Promise.resolve(true).then(() => console.log(4));
+console.log(5);
+```
+
+```javascript
 (function () {
     console.log(1);
     setTimeout(() => console.log(2), 1000);
