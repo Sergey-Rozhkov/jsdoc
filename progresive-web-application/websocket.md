@@ -2,7 +2,7 @@
 
 Протокол WebSocket \(стандарт RFC 6455\) предназначен для решения любых задач и снятия ограничений обмена данными между браузером и сервером. Он позволяет пересылать любые данные, на любой домен, безопасно и почти без лишнего сетевого трафика.
 
-{% embed data="{\"url\":\"https://learn.javascript.ru/websockets\",\"type\":\"link\",\"title\":\"WebSocket\",\"icon\":{\"type\":\"icon\",\"url\":\"https://learn.javascript.ru/img/favicon/apple-touch-icon-precomposed.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://learn.javascript.ru/img/site\_preview\_ru\_1200x630.png\",\"width\":1200,\"height\":630,\"aspectRatio\":0.525}}" %}
+{% embed url="https://learn.javascript.ru/websockets" %}
 
 ![](../.gitbook/assets/f-portable-network-e.jpg)
 

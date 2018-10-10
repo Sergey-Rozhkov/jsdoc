@@ -2,6 +2,31 @@
 
 ### Объясните код
 
+
+
+```javascript
+var а = {};
+
+function clear(a) {
+    a.a = 10;
+    a = null;
+}
+clear(a);
+
+console.log(a); // ???
+```
+
+```javascript
+var а = {};
+
+(function clear(a) {
+    a.a = 10;
+    a = null;
+})(a);
+
+console.log(a); // ???
+```
+
 ```javascript
 var а = {};
 

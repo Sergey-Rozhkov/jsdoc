@@ -1,8 +1,8 @@
 # RxJs
 
-{% embed data="{\"url\":\"https://www.learnrxjs.io/operators/\",\"type\":\"link\",\"title\":\"Operators · learn-rxjs\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.learnrxjs.io/gitbook/images/apple-touch-icon-precomposed-152.png\",\"width\":152,\"height\":152,\"aspectRatio\":1}}" %}
+{% embed url="https://www.learnrxjs.io/operators/" %}
 
-{% embed data="{\"url\":\"http://rxmarbles.com/\",\"type\":\"link\",\"title\":\"RxMarbles: Interactive diagrams of Rx Observables\",\"description\":\"Learn, build, and test Rx functions on Observables\",\"icon\":{\"type\":\"icon\",\"url\":\"http://rxmarbles.com/favicon.png\",\"aspectRatio\":0}}" %}
+{% embed url="http://rxmarbles.com/" %}
 
 * Combination
   * `zip` - After all observables emit, emit values as an array.

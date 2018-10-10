@@ -65,7 +65,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 * Новая версия _языка_ HTML, с новыми элементами, атрибутами и новым поведением.
 * Набор технологий, позволяющий создавать разнообразные сайты и Web-приложения.
 
-{% embed data="{\"url\":\"https://developer.mozilla.org/ru/docs/HTML/HTML5\",\"type\":\"link\",\"title\":\"HTML5\",\"description\":\"HTML5 — последняя версия стандарта HTML. Эта страница создана в помощь всем разработчикам Open Web и ссылается на множество материалов, сгруппированных по функциям:\",\"icon\":{\"type\":\"icon\",\"url\":\"https://developer.mozilla.org/static/img/favicon144.e7e21ca263ca.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png\",\"width\":600,\"height\":600,\"aspectRatio\":1}}" %}
+{% embed url="https://developer.mozilla.org/ru/docs/HTML/HTML5" %}
 
 #### New HTML5 Elements
 
@@ -288,7 +288,7 @@ html body.app div:first-child p .title {
 
 Ссылка на визуальную шпаргалку по свойствам:
 
-{% embed data="{\"url\":\"https://codepen.io/enxaneta/full/adLPwv\",\"type\":\"rich\",\"title\":\"Flexbox playground\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/222579.adLPwv.small.cb19cb8a-7204-404b-9072-987ec1e22ba8.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/enxaneta/embed/preview/adLPwv?height=300&slug-hash=adLPwv&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/enxaneta/embed/preview/adLPwv?height=300&amp;slug-hash=adLPwv&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Flexbox playground\"}" %}
+{% embed url="https://codepen.io/enxaneta/full/adLPwv" caption="Flexbox playground" %}
 
 Модуль _Flexbox_ \(flexible box — «гибкий блок», на данный момент W3C Candidate Recommendation\) ставит задачу предложить более эффективный способ вёрстки, выравнивания и распределения свободного места между элементами в контейнере, даже когда их размер неизвестен и/или динамический.
 
