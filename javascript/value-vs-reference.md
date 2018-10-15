@@ -13,7 +13,7 @@ function clear(a) {
 }
 clear(a);
 
-console.log(a); // ???
+console.log(a); // ?
 ```
 
 ```javascript
@@ -24,18 +24,7 @@ var а = {};
     a = null;
 })(a);
 
-console.log(a); // ???
-```
-
-```javascript
-var а = {};
-
-(function clear(a) {
-    a.a = 10;
-    a = null;
-})(a);
-
-console.log(a); // ???
+console.log(a); // ?
 ```
 
 ```javascript
@@ -46,7 +35,7 @@ var а = {a: 1};
     a = {a: 3};
 })(a);
 
-console.log(a); // ???
+console.log(a); // ?
 ```
 
 ```javascript
@@ -54,8 +43,8 @@ var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
 
-console.log(foo.x); // ???
-console.log(bar.x); // ???
+console.log(foo.x); // ?
+console.log(bar.x); // ?
 ```
 
 ```javascript
@@ -64,7 +53,7 @@ var obj = {
 };
 var z = obj.innerObj;
 z.x = 25;
-console.log(obj.innerObj.x); // ???
+console.log(obj.innerObj.x); // ?
 ```
 
 ```javascript
@@ -73,7 +62,7 @@ var obj = {
 };
 var z = obj.innerArr;
 z = [{x: 25}];
-console.log(obj.innerArr[0].x); // ???
+console.log(obj.innerArr[0].x); // ?
 ```
 
 ```javascript
@@ -81,7 +70,7 @@ var obj = {
     arr: []
 };
 obj.arr.push(17);
-console.log(obj.arr === [17]); // ???
+console.log(obj.arr === [17]); // ?
 ```
 
 ```javascript
@@ -101,19 +90,7 @@ var admin = new User("Sam"),
 
 admin.attributes.isAdmin = true;
 
-console.log('admin', admin.attributes.isAdmin); // ???
-console.log('guest', guest.attributes.isAdmin); // ???
-```
-
-```javascript
-var obj = {
-    a: 1
-};
-
-(function (obj) {
-    obj = {a: 2};
-})(obj);
-
-console.log(obj.a); // ???
+console.log('admin', admin.attributes.isAdmin); // ?
+console.log('guest', guest.attributes.isAdmin); // ?
 ```
 

@@ -10,7 +10,7 @@ function foo() {
     var x = 1;
     return typeof x;
 };
-foo(); // ???
+foo(); // ?
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -19,23 +19,23 @@ foo(); // ???
 var myVar = 'hello';
 
 function myFunc() {
-    console.log(myVar); // ???
+    console.log(myVar); // ?
     var myVar = 'goodbye';
-    console.log(myVar); // ???
+    console.log(myVar); // ?
 }
 
 myFunc();
-console.log(myVar); // ???
+console.log(myVar); // ?
 ```
 
 ```javascript
 var x = 1; 
-console.log(x); // ??? 
+console.log(x); // ?
 if (true) { 
     var x = 2; 
-    console.log(x); // ???
+    console.log(x); // ?
 } 
-console.log(x); // ???
+console.log(x); // ?
 ```
 
 {% code-tabs %}
@@ -63,7 +63,7 @@ function bar() {
     foo();
 }
 
-bar(); // ???
+bar(); // ?
 ```
 
 ```javascript
@@ -77,6 +77,6 @@ function test() {
         alert("BAR"); 
     } 
 } 
-test(); // ???
+test(); // ?
 ```
 

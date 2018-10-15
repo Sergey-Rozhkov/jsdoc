@@ -108,7 +108,7 @@ function SomeClassOne() {
 }
 
 var o = new SomeClassOne();
-console.log(o.val); // ???
+console.log(o.val); // ?
 
 function SomeClassTwo() {
     this.val = 'Two';
@@ -116,6 +116,6 @@ function SomeClassTwo() {
 }
 
 o = new SomeClassTwo();
-console.log(o.val); // ???
+console.log(o.val); // ?
 ```
 

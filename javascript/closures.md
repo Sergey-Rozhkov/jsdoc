@@ -13,6 +13,32 @@ description: >-
 ### Объясните код
 
 ```javascript
+var myVar = 'hello';
+
+function myFunc() {
+    console.log(myVar); // ?
+    var myVar = 'goodbye';
+    console.log(myVar); // ?
+}
+
+myFunc();
+console.log(myVar); // ?
+```
+
+```javascript
+var a = 1;
+var b = 2;
+
+(function() {
+  var b = 3;
+  a += b;
+})();
+
+a; // ?
+b; // ?
+```
+
+```javascript
 function getClosure() {
     var canYouSeeMe = "here I am";
     return (function theClosure() {
@@ -21,7 +47,7 @@ function getClosure() {
 }
 
 var closure = getClosure();
-console.log(closure().canYouSeeIt);  // ???
+console.log(closure().canYouSeeIt);  // ?
 ```
 
 ```javascript
@@ -37,19 +63,6 @@ function outer() {
 ```
 
 ```javascript
-var myVar = 'hello';
-
-function myFunc() {
-    console.log(myVar); // ???
-    var myVar = 'goodbye';
-    console.log(myVar); // ???
-}
-
-myFunc();
-console.log(myVar); // ???
-```
-
-```javascript
 function makeAdder(a) {
   return function(b) {
     return a + b;
@@ -59,18 +72,5 @@ var x = makeAdder(5);
 var y = makeAdder(20);
 x(6); // ?
 y(7); // ?
-```
-
-```javascript
-var a = 1;
-var b = 2;
-
-(function() {
-  var b = 3;
-  a += b;
-})();
-
-a; // ?
-b; // ?
 ```
 
