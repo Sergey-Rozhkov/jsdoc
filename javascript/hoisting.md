@@ -15,6 +15,19 @@ foo(); // ?
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="number" %}
+```javascript
+function foo() {
+    var x = 1;
+    return typeof x;
+    function x() {}    
+};
+foo(); // ?
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ```javascript
 var myVar = 'hello';
 
