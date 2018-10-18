@@ -87,7 +87,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 
 ![](.gitbook/assets/image%20%2818%29.png)
 
-![&#x421;&#x438;&#x43C;&#x430;&#x43D;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438;&#x435; &#x442;&#x44D;&#x433;&#x438;](.gitbook/assets/image%20%2822%29.png)
+![&#x421;&#x435;&#x43C;&#x430;&#x43D;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438;&#x435; &#x442;&#x435;&#x433;&#x438;](.gitbook/assets/image%20%2822%29.png)
 
 ### Общие вопросы
 
