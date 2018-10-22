@@ -4,7 +4,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 
 # Types
 
-### Data types {#Типы_данных}
+### Data types <a id="&#x422;&#x438;&#x43F;&#x44B;_&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445;"></a>
 
 * 6 типов данных являются примитивами:
   * [Boolean](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Boolean) \(Булев, Логический тип\)

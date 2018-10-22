@@ -37,7 +37,7 @@ Both **Jenkins** and **TeamCity** are continuous integration tools that serve ma
 | for debug purposes, cannot be minified | will be minified and will remove all debug statements |
 | it's not necessary to change the version number | bump up the versin number |
 
-## SonarQube {#firstHeading}
+## SonarQube <a id="firstHeading"></a>
 
 Платформа с открытым исходным кодом для непрерывного анализа \([англ.](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA) continuous inspection\) и измерения качества кода.
 

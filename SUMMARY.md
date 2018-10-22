@@ -1,6 +1,11 @@
 # Table of contents
 
 * [Initial page](README.md)
+* [Software Development Processes](software-development-processes/README.md)
+  * [Software Development Methodology](software-development-processes/software-development-methodology.md)
+  * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
+  * [Version Control System](software-development-processes/untitled.md)
+  * [Estimations](software-development-processes/estimations.md)
 * [Software Engineering Practices](software-engineering-practices/README.md)
   * [Architecture knowledge](software-engineering-practices/architecture-knowledge.md)
   * [Code Standards & Review Process](software-engineering-practices/code-standards-and-code-review-process.md)
@@ -8,11 +13,6 @@
   * [Continuous Integration & Continuous Delivery & Deployment](software-engineering-practices/continuous-integration-and-continuous-delivery-and-deployment.md)
   * [Testing processes](software-engineering-practices/testing-processes.md)
   * [Troubleshooting/Logging/Monitoring](software-engineering-practices/troubleshooting-logging-monitoring.md)
-* [Software Development Processes](software-development-processes/README.md)
-  * [Bug Tracking Systems](software-development-processes/bug-tracking-systems.md)
-  * [Version Control System](software-development-processes/untitled.md)
-  * [Estimations](software-development-processes/estimations.md)
-  * [Software Development Methodology](software-development-processes/software-development-methodology.md)
 * [HTML & CSS](html-css.md)
 * [JavaScript](javascript/README.md)
   * [Types](javascript/types/README.md)
