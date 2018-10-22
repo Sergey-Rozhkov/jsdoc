@@ -8,7 +8,7 @@
 * Базовые алгоритмы сортировки и поиска.
 * Двоичная система счисления.
 * Графики основных математических функций, факториал, понятие логарифма.
-* Английский язык уровня [Pre-intermediate \(А2\)](https://englex.ru/level-pre-intermediate/). [Тест](https://test.str.by/)
+* Английский язык уровня Pre-intermediate \(А2\). [Тест](https://test.str.by/) и [требования](https://englex.ru/level-pre-intermediate/)
 
 ### Мифы
 
