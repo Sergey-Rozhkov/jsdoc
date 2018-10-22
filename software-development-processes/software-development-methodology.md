@@ -1,7 +1,3 @@
----
-description: Методологии разработки
----
-
 # Software Development Methodology
 
 * Водопадная \(каскадная, последовательная\) модель
