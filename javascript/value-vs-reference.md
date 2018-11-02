@@ -39,6 +39,20 @@ console.log(a); // ?
 ```
 
 ```javascript
+var a = {};
+var b = a;
+
+function clear(c) {
+  c = 1;
+  c.foo = null;
+};
+
+clear(b);
+
+console.log(a, b);
+```
+
+```javascript
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
