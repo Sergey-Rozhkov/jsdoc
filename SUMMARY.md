@@ -30,6 +30,7 @@
   * [Decorators](javascript/decorators.md)
 * [TypeScript](typescript.md)
 * [Angular](angular/README.md)
+  * [Directives](angular/directives.md)
   * [Modules](angular/modules.md)
   * [Components](angular/components.md)
   * [View encapsulation](angular/view-encapsulation.md)
