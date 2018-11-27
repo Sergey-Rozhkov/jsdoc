@@ -4,6 +4,8 @@
 
 Наследование – это создание новых «классов» на основе существующих.
 
+> **Objects** does not have _prototype_ property. It has _\_\_proto\_\__ property.
+
 * Псевдо-классовый или Декларотивный
   * ChildClass extends ParrentClass
 * [Функциональный](https://learn.javascript.ru/functional-inheritance)
@@ -210,7 +212,7 @@ alert( double(5) ); // = mul(2, 5) = 10
 ### Объясните код
 
 {% code-tabs %}
-{% code-tabs-item title="Inheritance" %}
+{% code-tabs-item title="Inheritance & prototype" %}
 ```javascript
 var a = {b: 1},
     c = Object.create(a);
@@ -231,34 +233,73 @@ console.log(a.z); // ?
 {% code-tabs %}
 {% code-tabs-item title="Context" %}
 ```javascript
+var objA = {
+  name: "Alex",
+  sayName: function() {
+
+    console.log(this.name);
+  }
+}
+var objB = { name: "Ben", bike: obj1.bike };
+var name = "John";
+var bike = objA.bike;
+
+bike();           // ?
+objA.bike();      // ?
+objB.bike();      // ?
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="Context" %}
+```javascript
 var obj = {
-    prop: 10,
-    fnc: function () {
+    prop: 'Hi',
+    fncA: function () {
         return this.prop;
     },
-    // fnc: () => this.prop;
+    fncB: () => this.prop;
 }
-obj.fnc();  // ???
-var fnc = obj.fnc;
+obj.fncA();  // ???
+var fnc = obj.fncA;
 fnc();      // ???
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="Context" %}
 ```javascript
 var obj = {
-    prop: 1,
+    prop: 'One',
     fnc: function () {
         return this.prop;
     }
 };
-obj.fnc.prop = 2;
+obj.fnc.prop = 'Two';
 obj.fnc();  //  ???
 var fn = obj.fnc;
 fn();       //  ???
-obj.prop = 3;
+obj.prop = 'Three';
 obj.fnc();  //  ???
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="Context" %}
+```javascript
+var poke1 = {name:'Pikachu'};
+var poke2 = {name:'Chermander'};
+var poke3 = {name:'Bulbasaur'};
+
+var sayName = function(){ console.log(this.name) }
+
+sayName.bind(poke1).bind(poke2).call(poke3);
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 {% code-tabs %}
 {% code-tabs-item title="How to fix ?" %}
@@ -271,4 +312,6 @@ for (var i = 0; i < 10; i++) {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+
 
