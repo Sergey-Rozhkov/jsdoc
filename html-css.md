@@ -79,7 +79,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 #### New HTML5 API's \(Application Programming Interfaces\)
 
 * HTML Geolocation
-* HTML Drag and Drop
+* HTML [Drag and Drop](https://www.html5rocks.com/en/tutorials/dnd/basics/)
 * HTML Local Storage
 * HTML Application Cache
 * HTML Web Workers
