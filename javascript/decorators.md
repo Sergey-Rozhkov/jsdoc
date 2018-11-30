@@ -44,6 +44,8 @@ function enumerable(value) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="Unnamed decorator" %}
 ```javascript
 class Foo {
   @function (target, key, descriptor) {   
@@ -55,4 +57,6 @@ class Foo {
   }
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 

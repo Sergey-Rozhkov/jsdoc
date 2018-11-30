@@ -24,5 +24,3 @@
 
 {% embed url="https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce" %}
 
-{% embed url="https://school.rollingscopes.com/" %}
-

@@ -8,5 +8,5 @@
 
 {% embed url="https://github.com/Angular-RU/angular-ru-interview-questions" %}
 
-
+{% embed url="https://github.com/vladborsh/js-developer-interview\#angular" %}
 
