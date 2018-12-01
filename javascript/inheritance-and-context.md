@@ -54,45 +54,41 @@ var obj = new Car('red');
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="ECMAScript 6" %}
 ```javascript
-class Rectangle extends Shape {
-    constructor (id, x, y, width, height) {
-        super(id, x, y);
-        this.width  = width;
-        this.height = height;
-    }
+function A() {
+    this.propA = 'A';
+    this.sayA = function() {
+        console.log(this.propA);
+    };
 }
-class Circle extends Shape {
-    constructor (id, x, y, radius) {
-        super(id, x, y);
-        this.radius = radius;
-    }
-}
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="ECMAScript 5" %}
-```javascript
-var Rectangle = function (id, x, y, width, height) {
-    Shape.call(this, id, x, y);
-    this.width  = width;
-    this.height = height;
+A.prototype.funcA = function() {
+    console.log('funcA');
 };
-Rectangle.prototype = Object.create(Shape.prototype);
-Rectangle.prototype.constructor = Rectangle;
-var Circle = function (id, x, y, radius) {
-    Shape.call(this, id, x, y);
-    this.radius = radius;
+
+function B() {
+    A.call(B);
+    this.propB = 'B';
+    this.sayB = function() {
+        console.log(this.propB);
+    };
+}
+
+B.prototype = Object.create(A.prototype);
+B.prototype.constructor = B;
+
+B.prototype.funcB = function() {
+    console.log('funcB');
 };
-Circle.prototype = Object.create(Shape.prototype);
-Circle.prototype.constructor = Circle;
+
+////////////////////////////////////////////////////////////////////////////////
+
+var a = new A();
+var b = new B();
+
+console.log('a.propA', a.propA);
+console.log('b.propB', b.propB);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 {% code-tabs %}
 {% code-tabs-item title="Explain the difference" %}
