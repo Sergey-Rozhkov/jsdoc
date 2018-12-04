@@ -1,5 +1,7 @@
 # Software Development Methodology
 
+{% embed url="https://geekbrains.ru/posts/methodologies" %}
+
 * Водопадная \(каскадная, последовательная\) модель
 * Итерационная модель
 * Спиральная модель

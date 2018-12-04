@@ -4,6 +4,8 @@ description: 'Однопоточный, не блокирующий, парал�
 
 # JavaScript
 
+{% embed url="http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition-rus/" %}
+
 * JS Basic
   * Types
   * Array&String
