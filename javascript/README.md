@@ -6,61 +6,41 @@ description: 'Однопоточный, не блокирующий, парал�
 
 {% embed url="http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition-rus/" %}
 
-* JS Basic
+* JS Core
   * Types
-  * Array&String
-  * Object
-  * Function
+  * Value / Reference
+  * Object \(Array, Function\)
   * Scope
-  * Closure
+  * Closures
   * Hoisting
   * Comparison operators
-* JS Advance
   * Context \(this, call, apply, bind\)
   * Prototype and Inheritance
-  * JS HTML DOM
-  * JS BOM
-  * Properties
-  * wrapper/decorator
-  * currying
-  * 'use strict'
+  * Object properties
   * Autoboxing
-  * Exceptions
-* JS Asynchronous programming
-  * Event Loop,
+* Asynchronous programming
+  * Event Loop
   * JS Non-Blocking I/O
   * Promise API
-  * setTimeout
+  * setTimeout / setInterval / setImmediate
   * async/await
-* Network interaction
-  * HTTP
-  * HTTPS
-  * Ajax
-  * XMLHttpRequest
-  * JSONP, CORS
-  * COMET\(Web sockets, long polling, etc\)
-  * Web services REST
-  * Client&Server Architecture
-* JS Optimization
-  * Module Bundlers&Loaders&Minification
-  * Garbage collector
-  * JS Profiling
-* JS Design Patterns&Architecture
-  * JS Design Patterns
-  * Imperative/declarative programming
-  * Function Programming
-  * Composition
-  * Behaviour delegation \(JS\)
+* APIs
+  * DOM / BOM
+  * Elements selection \(getElements.., querySelector...\)
+  * Event reference \(delegation\)
+  * Client-side storages & Caching
 * ES New features
   * Constants&Scoping
   * Arrow functions
   * Spread operators
   * Classes
-* Client-side storages&Caching
-  * Cookies
-  * LocalStorage
-  * SessionStorage
-  * WebSQL
-  * IndexedDB
-  * WebCrypto
+  * es.next\(\)
+* Design Patterns & Architecture
+  * Currying
+  * wrapper/decorator/fabric/etc.
+  * Imperative/declarative programming
+  * Function Programming
+  * Composition
+
+
 
