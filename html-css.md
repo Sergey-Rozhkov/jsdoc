@@ -5,20 +5,19 @@ description: HyperText Markup Language & Cascading Style Sheets
 # HTML & CSS
 
 * HTML
-  * HTML elements
-  * HTML 5
-  * Doctypes
-* CSS Basics
-  * CSS box model & visual formatting \(position, display, floating\)
-  * Selectors, selector priorities
+  * HTML5 APIs
+  * DOM/BOM
+  * Semantic
+* CSS
+  * Selectors \(Cascade/Specificity\)
+  * Поток документа
+  * Pseudo-classes / Pseudo-elements
+  * Media queries
+  * Layouts \(float/inline-block/flex/grid\)
+  * Animations
+* Tools
+  * LESS / SCSS / PostCSS
   * CSS Frameworks
-* CSS Advance
-  * CSS preprocesors
-  * CSS Responsive design
-  * Selectors, impact on page rendering
-  * CSS 3 \(Custom fonts, animations, box-shadow, etc\)
-  * Optimization
-  * Browsers compabilites
 
 ## HTML
 
