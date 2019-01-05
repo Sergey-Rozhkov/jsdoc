@@ -84,3 +84,34 @@ export class HeroListComponent implements OnInit {
 <input [(ngModel)]="hero.name">
 ```
 
+```typescript
+@Component({
+  selector: 'my-cmp',
+  template: '<div></div><span></span>'
+})
+class MyCmpComponent {
+  public smth: string = 'some text';
+}
+```
+
+```typescript
+@Component({
+  selector: 'my-search',
+  template: `
+    <input [formControl]="control">
+    <div *ngFor="let item of list">{{item}}</div>
+  `
+})
+class MyCmpComponent {
+  public control: FormControl = new FormControl();
+  public list: string[] = [];
+
+  constructor(private apiService: ApiService) {
+  }
+
+  private getData(value): Observable<string[]> {
+    return this.apiService.get(value);
+  }
+}
+```
+
