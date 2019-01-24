@@ -4,3 +4,7 @@
 
 {% embed url="https://ru.vuejs.org/v2/guide/instance.html" %}
 
+{% embed url="https://www.interviewhelper.org/ru/question/voprosy-na-sobesedovanie-po-vue-js" %}
+
+
+
