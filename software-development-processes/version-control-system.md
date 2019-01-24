@@ -6,6 +6,8 @@
 
 **Git** — распределённая система управления версиями. Проект был создан Линусом Торвальдсом для управления разработкой ядра Linux, первая версия выпущена 7 апреля 2005 года. На сегодняшний день его поддерживает Джунио Хамано.
 
+![](../.gitbook/assets/image%20%2835%29.png)
+
 [Как работает Git](https://habr.com/post/313890/)  
 [https://git-scm.com/doc](https://git-scm.com/doc)  
 [https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)  
