@@ -68,6 +68,8 @@ description: HyperText Markup Language & Cascading Style Sheets
 
 {% embed url="https://developer.mozilla.org/ru/docs/HTML/HTML5" %}
 
+{% embed url="https://www.html5accessibility.com/" %}
+
 #### New HTML5 Elements
 
 * New **semantic elements** like `<header>`, `<footer>`, `<article>`, and `<section>`.
