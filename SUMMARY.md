@@ -28,6 +28,7 @@
   * [Event loop](javascript/event-loop.md)
   * [Write code](javascript/write-code.md)
   * [Decorators](javascript/decorators.md)
+  * [Polyfills](javascript/polyfills.md)
 * [TypeScript](typescript.md)
 * [RxJs](rxjs.md)
 * [RegExp](regexp.md)
