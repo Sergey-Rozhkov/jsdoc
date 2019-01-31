@@ -232,13 +232,12 @@ console.log(a.z); // ?
 var objA = {
   name: "Alex",
   sayName: function() {
-
     console.log(this.name);
   }
 }
 var objB = { name: "Ben", bike: obj1.bike };
 var name = "John";
-var bike = objA.bike;
+var bike = objA.name;
 
 bike();           // ?
 objA.bike();      // ?
@@ -257,9 +256,9 @@ var obj = {
     },
     fncB: () => this.prop;
 }
-obj.fncA();  // ???
+var var1 = obj.fncA();  // ???
 var fnc = obj.fncA;
-fnc();      // ???
+var val2 = fnc();      // ???
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
