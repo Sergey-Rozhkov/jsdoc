@@ -235,13 +235,13 @@ var objA = {
     console.log(this.name);
   }
 }
-var objB = { name: "Ben", bike: obj1.bike };
+var objB = { name: "Ben", sayName: objA.sayName };
 var name = "John";
-var bike = objA.name;
+var sayName = objA.sayName;
 
-bike();           // ?
-objA.bike();      // ?
-objB.bike();      // ?
+sayName();           // ?
+objA.sayName();      // ?
+objB.sayName();      // ?
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -254,7 +254,7 @@ var obj = {
     fncA: function () {
         return this.prop;
     },
-    fncB: () => this.prop;
+    fncB: () => this.prop
 }
 var var1 = obj.fncA();  // ???
 var fnc = obj.fncA;
