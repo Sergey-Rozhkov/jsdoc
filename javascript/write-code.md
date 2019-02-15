@@ -172,6 +172,15 @@ function reverse() {
 }
 ```
 
+```javascript
+var str2 = 'al8ex jo22hn mary3' // 'mary3 al8ex jo22hn'
+
+var res2 = str2
+  .split(' ')
+  .sort((a, b) => a.replace(/\D/g, '') - b.replace(/\D/g, ''))
+  .join(' ');
+```
+
 Напишите реализацию паттерна Singleton
 
 Напишите реализацию паттерна Factory

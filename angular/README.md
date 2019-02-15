@@ -10,3 +10,7 @@
 
 {% embed url="https://github.com/vladborsh/js-developer-interview\#angular" %}
 
+{% embed url="https://metanit.com/web/angular2/" %}
+
+
+
