@@ -54,6 +54,38 @@ var obj = new Car('red');
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="Inheritance" %}
+```javascript
+function Animal(name) {
+  this.name = name;
+  this.jump = function() {
+    console.log(this.name + ' jump');
+  };
+}
+
+Animal.prototype.run = function() {
+  console.log(this.name + ' run');
+};
+
+function Cat(catType) {
+  this.type = catType;
+
+  Animal.apply(this, Array.prototype.slice.call(arguments, 1));
+}
+
+Cat.prototype = Object.create(Animal.prototype);
+Cat.prototype.constructor = Cat;
+
+Cat.prototype.voice = function() {
+  console.log('meow');
+};
+
+let cat = new Cat('British', 'Alex');
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ```javascript
 function A() {
     this.propA = 'A';
@@ -67,7 +99,7 @@ A.prototype.funcA = function() {
 };
 
 function B() {
-    A.call(B);
+    A.call(this);
     this.propB = 'B';
     this.sayB = function() {
         console.log(this.propB);
@@ -132,9 +164,9 @@ function User(name) {
 
 ### Функции привязки контекста
 
-* `call` - вызывает функцию с указанным значением this и индивидуально предоставленными аргументами.
-* `apply` - вызывает функцию с указанным значением this и аргументами, предоставленными в виде массива \(либо массивоподобного объекта\).
-* `bind` - создаёт новую функцию, которая при вызове устанавливает в качестве контекста выполнения this предоставленное значение. В метод также передаётся набор аргументов, которые будут установлены перед переданными в привязанную функцию аргументами при её вызове.
+* `call` - вызывает функцию с указанным значением **this** и индивидуально предоставленными аргументами.
+* `apply` - вызывает функцию с указанным значением **this** и аргументами, предоставленными в виде массива \(либо массивоподобного объекта\).
+* `bind` - создаёт новую функцию, которая при вызове устанавливает в качестве контекста выполнения **this** предоставленное значение. В метод также передаётся набор аргументов, которые будут установлены перед переданными в привязанную функцию аргументами при её вызове.
 
 {% code-tabs %}
 {% code-tabs-item title="bind polyfill" %}
@@ -191,7 +223,8 @@ sum2(10) // 16
 
 ### Карринг
 
-`Каррирование` или `карринг` \(англ. currying\) в информатике — преобразование функции от многих аргументов в набор функций, каждая из которых является функцией от одного аргумента.
+`Каррирование` или `карринг` \(англ. **currying**\) в информатике — преобразование фун  
+кции от многих аргументов в набор функций, каждая из которых является функцией от одного аргумента.
 
 ```javascript
 function mul(a, b) {
@@ -283,7 +316,7 @@ obj.fnc();  //  ???
 {% endcode-tabs %}
 
 {% code-tabs %}
-{% code-tabs-item title="Context" %}
+{% code-tabs-item title="Bind context" %}
 ```javascript
 var poke1 = {name:'Pikachu'};
 var poke2 = {name:'Chermander'};
