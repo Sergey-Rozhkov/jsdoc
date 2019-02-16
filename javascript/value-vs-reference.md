@@ -1,38 +1,37 @@
 # Value vs Reference
 
-### Объясните код
-
-
+### Объяснить код
 
 ```javascript
-var а = {};
+var a = {};
 
 function clear(a) {
-    a.a = 10;
-    a = null;
+  a.a = 10;
+  a = null;
 }
+
 clear(a);
 
 console.log(a); // ?
 ```
 
 ```javascript
-var а = {};
+var a = {};
 
 (function clear(a) {
-    a.a = 10;
-    a = null;
+  a.a = 10;
+  a = null;
 })(a);
 
 console.log(a); // ?
 ```
 
 ```javascript
-var а = {a: 1};
+var a = {a: 1};
 
 (function clear(a) {
-    a.a = 2;
-    a = {a: 3};
+  a.a = 2;
+  a = {a: 3};
 })(a);
 
 console.log(a); // ?
@@ -49,7 +48,7 @@ function clear(c) {
 
 clear(b);
 
-console.log(a, b);
+console.log(a, b); // ?
 ```
 
 ```javascript
@@ -62,21 +61,21 @@ console.log(bar.x); // ?
 ```
 
 ```javascript
-var obj = {
-    innerObj: {foo: 9}
+var x = {
+    innerObj: {foo: 'bar'}
 };
-var z = obj.innerObj;
-z.x = 25;
-console.log(obj.innerObj.x); // ?
+var y = x.innerObj;
+y.foo = 'baz';
+console.log(obj.innerObj.foo); // ?
 ```
 
 ```javascript
 var obj = {
-    innerArr: [{x: 17}]
+    arr: [{a: 1}]
 };
-var z = obj.innerArr;
-z = [{x: 25}];
-console.log(obj.innerArr[0].x); // ?
+var x = obj.arr;
+x = [{a: 2}];
+console.log(obj.arr[0].a); // ?
 ```
 
 ```javascript
@@ -89,9 +88,11 @@ console.log(obj.arr === [17]); // ?
 
 ```javascript
 var val = (function (a) {
-    arguments[0] = 10;
+    a = 'maybe';
+    arguments[0] = 'no';
     return a;
-})(5);
+})('yes');
+console.log(val); // ?
 ```
 
 ```javascript

@@ -6,19 +6,51 @@ description: >-
 
 # Closures
 
+### Материал
+
 {% embed url="https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures" %}
 
-## [Understanding JavaScript Closures](https://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/)
+{% embed url="https://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/" %}
 
-### Объясните код
+```javascript
+function getConunter() {
+  var counter = 0;
+
+  return function() {
+    return ++counter;
+  };
+}
+
+var myCounterMans = getCounter();
+var myCounterWoMans = getCounter();
+
+myCounterMans(); // ?
+myCounterMans(); // ?
+myCounterWoMans(); // ?
+myCounterMans(); // ?
+```
+
+```javascript
+var x = "global";
+
+function outer() {
+    var y = "outer";
+
+    function inner() {
+        var x = "inner";
+    }
+}
+```
+
+### Объяснить код
 
 ```javascript
 var myVar = 'hello';
 
 function myFunc() {
-    console.log(myVar); // ?
-    var myVar = 'goodbye';
-    console.log(myVar); // ?
+  console.log(myVar); // ?
+  var myVar = 'goodbye';
+  console.log(myVar); // ?
 }
 
 myFunc();
@@ -51,23 +83,12 @@ console.log(closure().canYouSeeIt);  // ?
 ```
 
 ```javascript
-var x = "global";
-
-function outer() {
-    var y = "outer";
-
-    function inner() {
-        var x = "inner";
-    }
-}
-```
-
-```javascript
 function makeAdder(a) {
   return function(b) {
     return a + b;
   };
 }
+
 var x = makeAdder(5);
 var y = makeAdder(20);
 x(6); // ?

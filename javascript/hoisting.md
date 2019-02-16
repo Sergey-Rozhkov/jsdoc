@@ -1,6 +1,12 @@
 # Hoisting
 
-### Объясните код
+### Материалы
+
+{% embed url="https://scotch.io/tutorials/understanding-hoisting-in-javascrip" caption="Understanding Hoisting in JavaScript" %}
+
+{% embed url="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" %}
+
+### Объяснить код
 
 {% code-tabs %}
 {% code-tabs-item title="number" %}

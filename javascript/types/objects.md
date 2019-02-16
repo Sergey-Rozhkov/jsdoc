@@ -18,12 +18,13 @@ const a = {};
 const c = Object.create(null);
 ​
 function User() {}
+
 const d = new User();
 
 const e = {
-    property: function ([parameters]) {},
-    get property() {},
-    set property(value) {}
+  property: function([parameters]) {},
+  get property() {},
+  set property(value) {},
 };
 ```
 {% endcode-tabs-item %}
@@ -33,19 +34,19 @@ const e = {
 {% code-tabs-item title="Object.create polyfill" %}
 ```javascript
 Object.myCreate = function(prototype, descriptors) {
-    function F() {};
-    F.prototype = prototype;
-    if (typeof(descriptors) === "object") {
-        for (prop in descriptors) {
-            if (descriptors.hasOwnProperty((prop))) {
-                F[prop] = props[prop].value;
-            }
-        }
+  function F() {};
+  F.prototype = prototype;
+  if (typeof (descriptors) === 'object') {
+    for (prop in descriptors) {
+      if (descriptors.hasOwnProperty((prop))) {
+        F[prop] = props[prop].value;
+      }
     }
-    return new F();
-    
-    // Object.defineProperties(object1, descriptors);
-}
+  }
+  return new F();
+
+  // Object.defineProperties(obj, descriptors);
+};
 
 // descriptors
 // {x: { value: undefined, writable: true, configurable: true, enumerable: true}}
@@ -60,11 +61,12 @@ function Article() {
   Article.count++;
   //...
 }
+
 Article.count = 0;
 
 Article.showCount = function() {
-  alert( this.count );
-}
+  alert(this.count);
+};
 
 // использование
 new Article();
@@ -84,7 +86,7 @@ function User(userData) {
   }
 
   this.sayHi = function() {
-    alert(this.name)
+    alert(this.name);
   };
   // ...
 }
@@ -95,24 +97,24 @@ guest.sayHi(); // Аноним
 
 var knownUser = new User({
   name: 'Вася',
-  age: 25
+  age: 25,
 });
 knownUser.sayHi(); // Вася
 ```
 
-### Объясните код
+### Объяснить код
 
 ```javascript
 function SomeClassOne() {
-    this.val = 'One';
+  this.val = 'One';
 }
 
 var o = new SomeClassOne();
 console.log(o.val); // ?
 
 function SomeClassTwo() {
-    this.val = 'Two';
-    return {val: 'Three'};
+  this.val = 'Two';
+  return {val: 'Three'};
 }
 
 o = new SomeClassTwo();

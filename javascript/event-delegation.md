@@ -13,7 +13,9 @@
 * **Event.stopImmediatePropagation\(\)**
   * Останавливает цепочку вызова событий для последующих слушателей DOM элемента.
 
-[Event delegation demo](https://codepen.io/SitePoint/pen/jmXdpz)
+{% embed url="https://codepen.io/SuperOrange/pen/BMGVwB" caption="Event delegation demo" %}
+
+
 
 ![Capturing &amp;gt; Targeting &amp;gt; Bubbling](../.gitbook/assets/event.png)
 

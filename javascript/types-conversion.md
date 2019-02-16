@@ -1,5 +1,7 @@
 # Types conversion
 
+### Материалы
+
 {% embed url="https://learn.javascript.ru/types-conversion" %}
 
 {% embed url="https://learn.javascript.ru/object-conversion" %}
@@ -8,13 +10,15 @@
 
 {% embed url="https://medium.com/@sergeybulavyk/%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2-%D0%B2-javascript-35a15ddfc333" %}
 
+### Объяснить код
+
 ```javascript
 var a = {key: 'foo'};
 var b = {key: 'bar'};
 var c = {};
 
-c[a] = 123; 
-c[b] = 345; 
+c[a] = 123;
+c[b] = 345;
 console.log(c[a], c[b], c[c]); // ?
 ```
 
@@ -27,11 +31,15 @@ a > b; // ?
 a == b; // ?
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="Boolean" %}
 ```javascript
 const bool = new Boolean(false);
 if (bool) console.log(bool);
 if (bool == false) console.log(bool);
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ```javascript
 true + false
@@ -57,6 +65,8 @@ new Date(0) + 0
 3 < 2 < 1
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="Explanation" %}
 ```javascript
 var foo = {
 	toString: function () {
@@ -66,10 +76,13 @@ var foo = {
 		return "foo";
 	}
 };
+
 alert(foo.toString() + 1); // 6 (bad!)
 alert(foo + 1);            // "foo1" (no good!)
 alert(+foo);               // NaN (the worst!)
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 {% code-tabs %}
 {% code-tabs-item title="valueOf vs toString" %}
