@@ -48,7 +48,8 @@
   * [Templates, directives, and data binding](angular/templates-directives-and-data-binding.md)
   * [Services and dependency injection](angular/services-and-dependency-injection.md)
   * [Routing](angular/routing.md)
-* [Vue.js](vue.js.md)
+* [Vue.js](vue.js/README.md)
+  * [Хуки жизненного цикла экземпляра](vue.js/life-cycle.md)
 * [React](react.md)
 * [Other](other.md)
 

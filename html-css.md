@@ -226,7 +226,7 @@ html body.app div:first-child p .title {
 
 ![Calculating CSS Specificity Value](.gitbook/assets/image%20%2816%29.png)
 
-![](.gitbook/assets/image%20%2845%29.png)
+![](.gitbook/assets/image%20%2846%29.png)
 
 * **Специфичность селектора**
   * это условные четыре позиции important `x, x, x, x` и `x, x, x, x,` которые заполняются нулями и единицами в соответствии с содержимым селектора. Каждая из позиций имеет своё содержимое:
