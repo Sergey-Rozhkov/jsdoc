@@ -171,7 +171,7 @@ function User(name) {
 {% code-tabs %}
 {% code-tabs-item title="bind polyfill" %}
 ```javascript
-Function.prototype.myBind = function(context) 
+Function.prototype.myBind = function(context) {
   var func = this;
   var args = Array.prototype.slice.call(arguments, 1);
   return function() {
