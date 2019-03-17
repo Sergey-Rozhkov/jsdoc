@@ -32,7 +32,7 @@
 * [TypeScript](typescript.md)
 * [RxJs](rxjs.md)
 * [RegExp](regexp.md)
-* [Progresive Web Application](progresive-web-application/README.md)
+* [Progressive Web Application](progresive-web-application/README.md)
   * [IndexedDB](progresive-web-application/indexeddb.md)
   * [Web SQL](progresive-web-application/web-sql.md)
   * [WebSocket](progresive-web-application/websocket.md)

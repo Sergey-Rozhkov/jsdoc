@@ -1,15 +1,15 @@
----
-description: 'https://angular.io/guide/component-styles#view-encapsulation'
----
-
 # View encapsulation
 
-| Emulated | `0` | Emulate `Native` scoping of styles by adding an attribute containing surrogate id to the Host Element and pre-processing the style rules provided via [styles](https://angular.io/api/core/Component#styles) or [styleUrls](https://angular.io/api/core/Component#styleUrls), and adding the new Host Element attribute to all selectors.This is the default option. |
-| :--- | :--- | :--- |
-| Native | `1` | Use the native encapsulation mechanism of the renderer.For the DOM this means using [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/) and creating a ShadowRoot for Component's Host Element. |
-| None | `2` | Don't provide any template or style encapsulation. |
+* [`ShadowDom`](https://angular.io/api/core/ViewEncapsulation#ShadowDom) view encapsulation uses the browser's native shadow DOM implementation \(see [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM) on the [MDN](https://developer.mozilla.org/) site\) to attach a shadow DOM to the component's host element, and then puts the component view inside that shadow DOM. The component's styles are included within the shadow DOM.
+* [`Native`](https://angular.io/api/core/ViewEncapsulation#Native) view encapsulation uses a now **deprecated** version of the browser's native shadow DOM implementation - [learn about the changes](https://hayato.io/2016/shadowdomv1/).
+* [`Emulated`](https://angular.io/api/core/ViewEncapsulation#Emulated) view encapsulation \(the default\) emulates the behavior of shadow DOM by preprocessing \(and renaming\) the CSS code to effectively scope the CSS to the component's view. For details, see [Appendix 1](https://angular.io/guide/component-styles#inspect-generated-css).
+* [`None`](https://angular.io/api/core/ViewEncapsulation#None) means that Angular does no view encapsulation. Angular adds the CSS to the global styles. The scoping rules, isolations, and protections discussed earlier don't apply. This is essentially the same as pasting the component's styles into the HTML.
 
-[https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html](https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html)
+{% embed url="https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html" %}
+
+{% embed url="https://angular.io/guide/component-styles\#component-styles" %}
+
+{% embed url="https://youtu.be/qNuYwcmmOyc" %}
 
 При создании компонента, Ангуляр помещает его в **shadowRoot**, который является частью **Shadow DOМ**. Теоретически предполагается, что мы инкапсулируем стили и данные компонентов и они не нарушают структуру страницы. К сожалению, на текущее время не все браузеры поддерживают Shadow DOМ. К счастью, Ангуляр предоставляет три варианта работы с  Shadow DOМ.
 

@@ -18,7 +18,7 @@ console.log(a); // ?
 ```javascript
 var a = {};
 
-(function clear(a) {
+(function(a) {
   a.a = 10;
   a = null;
 })(a);
@@ -35,6 +35,24 @@ var a = {a: 1};
 })(a);
 
 console.log(a); // ?
+```
+
+```javascript
+function makeJohnFromAlex(obj) {
+    obj.name = 'john';
+    return obj;
+}
+
+const alex = {
+    name: 'Alex',
+    age: 30,
+};
+
+const john = makeJohnFromAlex(alex);
+
+console.log(alex); // ?
+console.log(john); // ?
+console.log(alex === john); // ?
 ```
 
 ```javascript

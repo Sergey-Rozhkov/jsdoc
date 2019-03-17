@@ -12,5 +12,13 @@
 
 {% embed url="https://metanit.com/web/angular2/" %}
 
+### Список возможных вопросов
 
+* **constructor** vs **onInit**
+* view \(host/deep\)
+* RxJs
+* PurePipe / Pipe
+* **ng-container** vs **ng-template**
+* two services on one component
+* EventEmitter
 
