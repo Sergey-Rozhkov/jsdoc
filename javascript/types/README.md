@@ -17,7 +17,7 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 
 Все типы данных в JavaScript, кроме объектов, являются иммутабельными \(значения не могут быть модифицированы, а только перезаписаны новым полным значением\). Например, в отличии от C, где строку можно по символьно корректировать, в JavaScript строки пересоздаются только полностью. Значения таких типов называются "примитивными значениями".
 
-![Value Type and Reference Type](../../.gitbook/assets/image%20%2841%29.png)
+![Value Type and Reference Type](../../.gitbook/assets/image%20%2842%29.png)
 
 ### Objects
 

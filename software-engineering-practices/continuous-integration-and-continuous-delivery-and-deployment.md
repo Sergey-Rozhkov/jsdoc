@@ -57,7 +57,7 @@ Both **Jenkins** and **TeamCity** are continuous integration tools that serve ma
 
 ## Tests
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 ## **Server build version update**
 
