@@ -115,3 +115,9 @@ class MyCmpComponent {
 }
 ```
 
+### Lifecycle Hooks
+
+{% embed url="https://angular.io/guide/lifecycle-hooks\#peek-a-boo" %}
+
+
+
