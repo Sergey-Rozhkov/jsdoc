@@ -121,3 +121,90 @@ class MyCmpComponent {
 
 
 
+### Angular lifecycle hooks <a id="other-angular-lifecycle-hooks"></a>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Hook</th>
+      <th style="text-align:left">Purpose and Timing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>ngOnChanges()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Respond when Angular (re)sets data-bound input properties. The method
+          receives a <a href="https://angular.io/api/core/SimpleChanges"><code>SimpleChanges</code></a> object
+          of current and previous property values.</p>
+        <p>Called before <code>ngOnInit()</code> and whenever one or more data-bound
+          input properties change.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ngOnInit()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Initialize the directive/component after Angular first displays the data-bound
+          properties and sets the directive/component&apos;s input properties.</p>
+        <p>Called <em>once</em>, after the <em>first</em>  <code>ngOnChanges()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ngDoCheck()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Detect and act upon changes that Angular can&apos;t or won&apos;t detect
+          on its own.</p>
+        <p>Called during every change detection run, immediately after <code>ngOnChanges()</code> and <code>ngOnInit()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://angular.io/api/router/RouterLinkActive#ngAfterContentInit"><code>ngAfterContentInit()</code></a>
+      </td>
+      <td style="text-align:left">
+        <p>Respond after Angular projects external content into the component&apos;s
+          view / the view that a directive is in.</p>
+        <p>Called <em>once</em> after the first <code>ngDoCheck()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ngAfterContentChecked()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Respond after Angular checks the content projected into the directive/component.</p>
+        <p>Called after the <a href="https://angular.io/api/router/RouterLinkActive#ngAfterContentInit"><code>ngAfterContentInit()</code></a> and
+          every subsequent <code>ngDoCheck()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://angular.io/api/forms/NgForm#ngAfterViewInit"><code>ngAfterViewInit()</code></a>
+      </td>
+      <td style="text-align:left">
+        <p>Respond after Angular initializes the component&apos;s views and child
+          views / the view that a directive is in.</p>
+        <p>Called <em>once</em> after the first <code>ngAfterContentChecked()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ngAfterViewChecked()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Respond after Angular checks the component&apos;s views and child views
+          / the view that a directive is in.</p>
+        <p>Called after the <a href="https://angular.io/api/forms/NgForm#ngAfterViewInit"><code>ngAfterViewInit()</code></a> and
+          every subsequent <code>ngAfterContentChecked()</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ngOnDestroy()</code>
+      </td>
+      <td style="text-align:left">
+        <p>Cleanup just before Angular destroys the directive/component. Unsubscribe
+          Observables and detach event handlers to avoid memory leaks.</p>
+        <p>Called <em>just before</em> Angular destroys the directive/component.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
