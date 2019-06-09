@@ -6,7 +6,7 @@
 
 {% embed url="https://blog.angularindepth.com/learn-to-combine-rxjs-sequences-with-super-intuitive-interactive-diagrams-20fce8e6511" %}
 
-
+{% embed url="https://reactive.how/rxjs/" %}
 
 * Combination
   * `zip` - After all observables emit, emit values as an array.
@@ -22,6 +22,10 @@
 * Error Handling
   * `catch` - Gracefully handle errors in an observable sequence.
 * Multicasting
+  * `publish`
+  * `multicast`
+  * `share`
+  * `shareReplay`
 * Filtering
   * `filter` - Emit values that pass the provided condition.
   * `debounce` - Discard emitted values that take less than the specified time
@@ -112,4 +116,16 @@ observable.subscribe((event) => {
 {% endcode-tabs %}
 
 ### Code
+
+### Materials
+
+{% embed url="https://www.learnrxjs.io/recipes/" caption="Recipes" %}
+
+{% embed url="https://blog.thoughtram.io/rx/2016/08/01/exploring-rx-operators-flatmap.html" %}
+
+{% embed url="https://reactive.how/" %}
+
+[https://gist.github.com/staltz/868e7e9bc2a7b8c1f754](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+
+
 
