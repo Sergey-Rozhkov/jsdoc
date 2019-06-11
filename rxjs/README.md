@@ -1,6 +1,6 @@
 # RxJs
 
-{% embed url="https://www.learnrxjs.io/operators/" %}
+{% embed url="https://www.learnrxjs.io/operators/" caption="RxJS Operators By Example" %}
 
 {% embed url="http://rxmarbles.com/" %}
 
@@ -125,7 +125,11 @@ observable.subscribe((event) => {
 
 {% embed url="https://reactive.how/" %}
 
-[https://gist.github.com/staltz/868e7e9bc2a7b8c1f754](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+{% embed url="https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html" %}
+
+{% embed url="https://blog.thoughtram.io/rx/2016/08/01/exploring-rx-operators-flatmap.html" %}
+
+
 
 
 
