@@ -44,6 +44,7 @@
 * [Angular](angular/README.md)
   * [Components](angular/components.md)
   * [Forms](angular/forms.md)
+  * [Dependency Injection](angular/dependency-injection.md)
   * [View encapsulation](angular/view-encapsulation.md)
   * [Modules](angular/modules.md)
   * [Directives](angular/directives.md)
