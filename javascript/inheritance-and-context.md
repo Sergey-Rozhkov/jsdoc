@@ -240,6 +240,19 @@ alert( double(5) ); // = mul(2, 5) = 10
 
 ### Объясните код
 
+```javascript
+function test(n) {
+    this.x = 10;
+    const calc = n => {
+        this.x = n * n;
+    }
+    calc(n);
+    return this.x;
+}
+
+test(5);
+```
+
 {% code-tabs %}
 {% code-tabs-item title="Inheritance & prototype" %}
 ```javascript
