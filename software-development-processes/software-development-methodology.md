@@ -1,4 +1,4 @@
-# Software Development Methodology
+# Development Methodology
 
 {% embed url="https://geekbrains.ru/posts/methodologies" %}
 

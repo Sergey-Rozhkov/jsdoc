@@ -1,4 +1,4 @@
-# Code Standards & Review Process
+# Code Standards & Review
 
 ## Code Standards
 

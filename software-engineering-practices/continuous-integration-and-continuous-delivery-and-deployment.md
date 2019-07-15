@@ -1,4 +1,4 @@
-# Continuous Integration & Continuous Delivery & Deployment
+# CI & CD
 
 [Какая разница между Continuous Delivery, Continuous Deployment и Continuous Integration](http://qaat.ru/kakaya-raznica-mezhdu-continuous-delivery-continuous-deployment-i-continuous-integration/)
 
