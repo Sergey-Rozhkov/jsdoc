@@ -42,6 +42,36 @@ Output : \(1, 5\) \(7, -1\) \(1, 5\)
 Input : arr\[\] = {2, 5, 17, -1}, sum = 7  
 Output : \(2, 5\)
 
+```javascript
+var arr = [1,2,3,7,6,9,-1,8,0,1,4];
+var sum = 8;
+
+function findPairs(arr, sum) {
+  let res = [];
+  let map = {};
+  
+  arr.forEach(item => {
+    if (map[item]) {
+      map[item]++;
+    } else {
+      map[item] = 1;
+    }
+  })
+  // console.log(map);
+  
+  arr.forEach(item => {
+    map[item]--;
+    if (map[sum - item]) {
+      res.push([item, sum - item])
+    }
+  })
+  return res;
+}
+
+console.log(findPairs(arr, sum)) // [[1,7], [1,7], [8,0], [9,-1]]
+
+```
+
 Напишите код функции `sum`, количество слагаемых не ограничено  
 `sum(1)(2) // 3  
 sum(1)(2)(3) // 6   
