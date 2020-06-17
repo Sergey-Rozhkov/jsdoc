@@ -56,6 +56,7 @@
   * [Templates, directives, and data binding](angular/templates-directives-and-data-binding.md)
   * [Services and DI](angular/services-and-dependency-injection.md)
   * [Routing](angular/routing.md)
+  * [NgRx](angular/ngrx.md)
 * [Vue.js](vue.js/README.md)
   * [Lifecycle Hooks](vue.js/life-cycle.md)
 * [React](react.md)
