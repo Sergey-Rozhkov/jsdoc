@@ -44,6 +44,7 @@ function outer() {
 
 ### Объяснить код
 
+{% code title="" %}
 ```javascript
 var myVar = 'hello';
 
@@ -56,6 +57,7 @@ function myFunc() {
 myFunc();
 console.log(myVar); // ?
 ```
+{% endcode %}
 
 ```javascript
 var a = 1;

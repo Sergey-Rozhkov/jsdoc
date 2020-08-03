@@ -31,15 +31,13 @@ a > b; // ?
 a == b; // ?
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Boolean" %}
+{% code title="Boolean" %}
 ```javascript
 const bool = new Boolean(false);
 if (bool) console.log(bool);
 if (bool == false) console.log(bool);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ```javascript
 true + false
@@ -65,8 +63,7 @@ new Date(0) + 0
 3 < 2 < 1
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Explanation" %}
+{% code title="Explanation" %}
 ```javascript
 var foo = {
 	toString: function () {
@@ -81,11 +78,9 @@ alert(foo.toString() + 1); // 6 (bad!)
 alert(foo + 1);            // "foo1" (no good!)
 alert(+foo);               // NaN (the worst!)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="valueOf vs toString" %}
+{% code title="valueOf vs toString" %}
 ```javascript
 var foo = {
 	toString: function () {
@@ -99,11 +94,9 @@ var foo = {
 alert(foo + "bar"); // ???
 alert([foo, "bar"].join("")); // ???
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="valueOf vs toString" %}
+{% code title="valueOf vs toString" %}
 ```javascript
 function MyObj(val){
   this.val = val;
@@ -124,8 +117,7 @@ console.log(a > b);
 console.log(a + b);
 console.log(a, b);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

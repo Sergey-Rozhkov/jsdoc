@@ -8,8 +8,7 @@
 
 ### Объяснить код
 
-{% code-tabs %}
-{% code-tabs-item title="number" %}
+{% code title="number" %}
 ```javascript
 function foo() {
     function x() {}
@@ -18,11 +17,9 @@ function foo() {
 };
 foo(); // ?
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="number" %}
+{% code title="number" %}
 ```javascript
 function foo() {
     var x = 1;
@@ -31,9 +28,9 @@ function foo() {
 };
 foo(); // ?
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
+{% code title="" %}
 ```javascript
 var myVar = 'hello';
 
@@ -46,6 +43,7 @@ function myFunc() {
 myFunc();
 console.log(myVar); // ?
 ```
+{% endcode %}
 
 ```javascript
 var x = 1; 
@@ -57,8 +55,7 @@ if (true) {
 console.log(x); // ?
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="shadowing" %}
+{% code title="shadowing" %}
 ```javascript
 const f = (coll) => {
     const iter = (item, coll) => {
@@ -67,8 +64,7 @@ const f = (coll) => {
     // ...
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ```javascript
 var a = 1;

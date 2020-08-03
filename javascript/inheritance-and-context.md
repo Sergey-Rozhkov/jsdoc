@@ -13,8 +13,7 @@
 * Прототипный
   * ChildClass.prototype = ParrentClass
 
-{% code-tabs %}
-{% code-tabs-item title="Прототипное наследование" %}
+{% code title="Прототипное наследование" %}
 ```javascript
 function SuperCar(){
     this.wave = 'ding';
@@ -31,11 +30,9 @@ Car.prototype.sayYes = function(){ console.log("Yes!"); };
 
 var obj = new Car('red');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Функциональное наследование" %}
+{% code title="Функциональное наследование" %}
 ```javascript
 function SuperCar(){
     this.wave = 'beep';
@@ -51,11 +48,9 @@ function Car(color) {
 
 var obj = new Car('red');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Inheritance" %}
+{% code title="Inheritance" %}
 ```javascript
 function Animal(name) {
   this.name = name;
@@ -83,8 +78,7 @@ Cat.prototype.voice = function() {
 
 let cat = new Cat('British', 'Alex');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ```javascript
 function A() {
@@ -122,8 +116,7 @@ console.log('a.propA', a.propA);
 console.log('b.propB', b.propB);
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Explain the difference" %}
+{% code title="Explain the difference" %}
 ```javascript
 function User(name) {
   this.name = name;
@@ -139,11 +132,9 @@ User.prototype.hello = function() {
   alert(this.name);
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Explain the difference" %}
+{% code title="Explain the difference" %}
 ```javascript
 function Role(role) {
   var role = role;
@@ -159,8 +150,7 @@ function User(name) {
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Функции привязки контекста
 
@@ -168,8 +158,7 @@ function User(name) {
 * `apply` - вызывает функцию с указанным значением **this** и аргументами, предоставленными в виде массива \(либо массивоподобного объекта\).
 * `bind` - создаёт новую функцию, которая при вызове устанавливает в качестве контекста выполнения **this** предоставленное значение. В метод также передаётся набор аргументов, которые будут установлены перед переданными в привязанную функцию аргументами при её вызове.
 
-{% code-tabs %}
-{% code-tabs-item title="bind polyfill" %}
+{% code title="bind polyfill" %}
 ```javascript
 Function.prototype.myBind = function(context) {
   var func = this;
@@ -179,21 +168,17 @@ Function.prototype.myBind = function(context) {
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="bind polyfill" %}
+{% code title="bind polyfill" %}
 ```javascript
 Function.prototype.myBind = function (context, ...args1) {
   return (...args2) => this.apply(context, args2.concat(args1));
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="bind polyfill" %}
+{% code title="bind polyfill" %}
 ```javascript
 function bind(func, context /*, args*/) {
   var bindArgs = [].slice.call(arguments, 2); // (1)
@@ -207,8 +192,7 @@ function bind(func, context /*, args*/) {
 
 bind(mul, null, 2)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ```javascript
 functiob sum(a, b, c, d) {
@@ -253,8 +237,7 @@ function test(n) {
 test(5);
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Inheritance & prototype" %}
+{% code title="Inheritance & prototype" %}
 ```javascript
 var a = {b: 1},
     c = Object.create(a);
@@ -269,11 +252,9 @@ console.log(c.z); // ?
 c.z = 3;
 console.log(a.z); // ?
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Context" %}
+{% code title="Context" %}
 ```javascript
 var objA = {
   name: "Alex",
@@ -289,11 +270,9 @@ sayName();           // ?
 objA.sayName();      // ?
 objB.sayName();      // ?
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Context" %}
+{% code title="Context" %}
 ```javascript
 var obj = {
     prop: 'Hi',
@@ -306,11 +285,9 @@ var var1 = obj.fncA();  // ???
 var fnc = obj.fncA;
 var val2 = fnc();      // ???
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Context" %}
+{% code title="Context" %}
 ```javascript
 var obj = {
     prop: 'One',
@@ -325,11 +302,9 @@ fn();       //  ???
 obj.prop = 'Three';
 obj.fnc();  //  ???
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Bind context" %}
+{% code title="Bind context" %}
 ```javascript
 var poke1 = {name:'Pikachu'};
 var poke2 = {name:'Chermander'};
@@ -339,11 +314,9 @@ var sayName = function(){ console.log(this.name) }
 
 sayName.bind(poke1).bind(poke2).call(poke3);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="How to fix ?" %}
+{% code title="How to fix ?" %}
 ```javascript
 for (var i = 0; i < 10; i++) {
     setTimeout(function () {
@@ -351,8 +324,7 @@ for (var i = 0; i < 10; i++) {
     }, 100);
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

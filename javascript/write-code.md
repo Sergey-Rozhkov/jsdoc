@@ -176,8 +176,7 @@ function reverse(num, result = 0){
 }
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Напишите полифил на функцию filter" %}
+{% code title="Напишите полифил на функцию filter" %}
 ```javascript
 [1,2,3,4].filter((num)=>{ return num > 3}) // >[4]
 
@@ -193,11 +192,9 @@ Array.prototype.filter = function (cb) {
   return result;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Напишите функцию reverse" %}
+{% code title="Напишите функцию reverse" %}
 ```javascript
 reverse(5,2,3) // -> '325'
 reverse(1, 2, 3, 4, 5); // -> '54321'
@@ -208,11 +205,9 @@ function reverse() {
       .reduce((sum, val) => '' + sum + val);
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Сортировка по числу в слове" %}
+{% code title="Сортировка по числу в слове" %}
 ```javascript
 var str2 = 'al8ex jo22hn mary3' // 'mary3 al8ex jo22hn'
 
@@ -221,8 +216,7 @@ var res2 = str2
   .sort((a, b) => a.replace(/\D/g, '') - b.replace(/\D/g, ''))
   .join(' ');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Напишите реализацию паттерна Singleton
 

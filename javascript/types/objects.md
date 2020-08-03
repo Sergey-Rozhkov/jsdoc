@@ -10,8 +10,7 @@
 * Метод `Object.create` - создаёт новый объект с указанными объектом прототипа и свойствами
 * Конструкторы объектов
 
-{% code-tabs %}
-{% code-tabs-item title="Способы создания обьекта" %}
+{% code title="Способы создания обьекта" %}
 ```javascript
 const a = {};
 ​const b = new Object();
@@ -27,11 +26,9 @@ const e = {
   set property(value) {},
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Object.create polyfill" %}
+{% code title="Object.create polyfill" %}
 ```javascript
 Object.myCreate = function(prototype, descriptors) {
   function F() {};
@@ -51,8 +48,7 @@ Object.myCreate = function(prototype, descriptors) {
 // descriptors
 // {x: { value: undefined, writable: true, configurable: true, enumerable: true}}
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Статические методы и свойства
 

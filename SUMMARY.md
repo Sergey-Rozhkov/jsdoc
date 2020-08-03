@@ -8,6 +8,8 @@
   * [Estimations](software-development-processes/estimations.md)
 * [Software Engineering Practices](software-engineering-practices/README.md)
   * [Architecture knowledge](software-engineering-practices/architecture-knowledge/README.md)
+    * [First-class citizen](software-engineering-practices/architecture-knowledge/first-class-citizen.md)
+    * [Programming paradigm](software-engineering-practices/architecture-knowledge/programming-paradigm.md)
     * [Design patterns](software-engineering-practices/architecture-knowledge/design-patterns.md)
   * [Code Standards & Review](software-engineering-practices/code-standards-and-code-review-process.md)
   * [Algorithms](software-engineering-practices/algorithms-and-data-structures.md)

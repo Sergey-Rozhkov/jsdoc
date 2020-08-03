@@ -2,18 +2,15 @@
 
 {% embed url="https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841" %}
 
-{% code-tabs %}
-{% code-tabs-item title="Decorator" %}
+{% code title="Decorator" %}
 ```javascript
 function memoize(target, name, descriptor) {
     // ..
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="A simple class decorator" %}
+{% code title="A simple class decorator" %}
 ```javascript
 @annotation
 class MyClass { }
@@ -23,11 +20,9 @@ function annotation(target) {
    target.annotated = true;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="A simple method decorator" %}
+{% code title="A simple method decorator" %}
 ```javascript
 class MyClass {
   @enumerable(false)
@@ -41,11 +36,9 @@ function enumerable(value) {
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Unnamed decorator" %}
+{% code title="Unnamed decorator" %}
 ```javascript
 class Foo {
   @function (target, key, descriptor) {   
@@ -57,6 +50,5 @@ class Foo {
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

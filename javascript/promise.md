@@ -15,10 +15,12 @@
 * [`Promise.reject(reason)`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)Возвращает объект `Promise`, который отклонён с указанной причиной.
 * [`Promise.resolve(value)`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)Возвращает объект `Promise`, который выполнен с указанным значением. Если значение может быть продолжено \(имеется метод `then`\), то возвращаемое обещание будет "следовать" продолжению, выступая адаптером его состояния; в противном случае будет возвращено ожидание в выполненном состоянии.
 
+{% code title="" %}
 ```javascript
 new Promise(executor);
 new Promise(function(resolve, reject) { /* ... */ });
 ```
+{% endcode %}
 
 ```javascript
 var prom = new Promise(function(resolve, reject) {
@@ -119,8 +121,7 @@ Promise.reject('start')
 console.log('finish');
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Функция promiseTimeout" %}
+{% code title="Функция promiseTimeout" %}
 ```javascript
 function promiseTimeout(value, timer) {
   var cb = function (resolve, reject) {
@@ -135,6 +136,5 @@ function promiseTimeout(value, timer) {
 promiseTimeout('TWO', 2000).then(data => console.log(data));
 promiseTimeout('ONE', 1000).then(data => console.log(data));
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

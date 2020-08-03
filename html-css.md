@@ -24,8 +24,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 * [**HTML**](https://ru.wikipedia.org/wiki/HTML) \(HyperText Markup Language — «язык гипертекстовой разметки»\) — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке **HTML** \(или XHTML\). 
 * [**XHTML**](https://ru.wikipedia.org/wiki/XHTML) является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.
 
-{% code-tabs %}
-{% code-tabs-item title="Структура HTML-документа" %}
+{% code title="Структура HTML-документа" %}
 ```markup
 <!DOCTYPE html>
 <html>
@@ -42,8 +41,7 @@ description: HyperText Markup Language & Cascading Style Sheets
    </body>
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Версии HTML
 
@@ -150,8 +148,7 @@ description: HyperText Markup Language & Cascading Style Sheets
 
 Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, например, к SVG или XUL.
 
-{% code-tabs %}
-{% code-tabs-item title="Пример таблицы стилей" %}
+{% code title="Пример таблицы стилей" %}
 ```css
 p {
     background-color: black;
@@ -195,8 +192,7 @@ html body.app div:first-child p .title {
     background-color: #CCCCCC;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Версии CSS
 
