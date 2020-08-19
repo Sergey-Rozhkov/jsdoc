@@ -1,19 +1,17 @@
----
-description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures'
----
-
 # Types
 
 ### Data types <a id="&#x422;&#x438;&#x43F;&#x44B;_&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445;"></a>
 
-* 6 типов данных являются примитивами:
-  * [Boolean](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Boolean) \(Булев, Логический тип\)
-  * [Null](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Null) \(Null тип \)
-  * [Undefined](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/undefined) \(Неопределенный тип\)
-  * [Number](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Number) \(Число\)
-  * [String](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%A1%D1%82%D1%80%D0%BE%D0%BA%D0%B0) \(Строка\)
-  * [Symbol](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Symbol) \(в ECMAScript 6\)
-* и [Object](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Object) \(Объект\)
+* 6 типов данных являющихся примитивами:
+  * [Undefined](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/undefined) \(Неопределенный тип\)  : `typeof instance === "undefined"`
+  * [Boolean](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Boolean) \(Булев, Логический тип\) : `typeof instance === "boolean"`
+  * [Number](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Number) \(Число\) : `typeof instance === "number"`
+  * [String](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%A1%D1%82%D1%80%D0%BE%D0%BA%D0%B0) \(Строка\) : `typeof instance === "string"`
+  * [BigInt](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/BigInt)  : `typeof instance === "bigint"`
+  * [Symbol](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Symbol) \(в ECMAScript 6\)  : `typeof instance === "symbol"`
+* [Null](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Null) \(Null тип \) : `typeof instance === "object"`. Специальный примитив, используемый не только для данных но и в качестве указателя на финальную точку в [Цепочке Прототипов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Inheritance_and_the_prototype_chain);
+* [Object](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/Object) \(Объект\) : `typeof instance === "object"`. Простая структура, используемая не только для хранения данных данных, но и для создания других структур, где любая структура создаётся с использованием ключевого слова [`new`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new): new [Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object), new [Array](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array), new [Map](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map), new [Set](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set), new [WeakMap](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), new [WeakSet](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakSet), new [Date](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date) и множество других структур;
+* и [Function](https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F) : `typeof instance === "function"`. Специальный случай, упрощающий определение типа для Функций, несмотря на то, что все функции конструктивно унаследованы от Object.
 
 Все типы данных в JavaScript, кроме объектов, являются иммутабельными \(значения не могут быть модифицированы, а только перезаписаны новым полным значением\). Например, в отличии от C, где строку можно по символьно корректировать, в JavaScript строки пересоздаются только полностью. Значения таких типов называются "примитивными значениями".
 
@@ -46,4 +44,10 @@ description: 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structur
 Эти наборы данных используют ссылку на объект в качестве ключа, и введены в JavaScript с приходом ECMAScript Edition 6. [`Set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set) и [`WeakSet`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) являют собой набор уникальных объектов, в то время как [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map) и [`WeakMap`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) ассоциируют с объектом \(выступающим в качестве ключа\) некоторое значение. Разница между Map и WeakMap заключается в том, что только у Map ключи являются перечисляемыми. Это позволяет оптимизировать сборку мусора для WeakMap.
 
 ### Mutable and immutable data
+
+// in progress
+
+{% embed url="https://developer.mozilla.org/ru/docs/Web/JavaScript/Data\_structures" %}
+
+
 
