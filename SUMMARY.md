@@ -23,6 +23,7 @@
   * [Value vs Reference](javascript/value-vs-reference.md)
   * [Closures](javascript/closures.md)
   * [Hoisting](javascript/hoisting.md)
+  * [Context](javascript/context.md)
   * [Types conversion](javascript/types-conversion.md)
   * [Event delegation](javascript/event-delegation.md)
   * [Inheritance and context](javascript/inheritance-and-context.md)
