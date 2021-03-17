@@ -138,3 +138,120 @@ promiseTimeout('ONE', 1000).then(data => console.log(data));
 ```
 {% endcode %}
 
+```javascript
+const wait = time => new Promise(
+  res => setTimeout(() => res(), time)
+);
+
+wait(200)
+  .then(() => new Promise(res => res('foo')))
+  .then(a => a)
+  .then(b => console.log(b))
+  .then(() => null)
+  .then(c => console.log(c))
+  .then(() => { throw new Error('foo') })
+  .then(
+    d => console.log(`d: ${ d }`),
+    e => console.log(e)) // [Error: foo]
+  .then(f => console.log(`f: ${ f }`))
+  .catch(e => console.log(e))
+  .then(() => { throw new Error('bar') })
+  .then(g => console.log(`g: ${ g }`))
+  .catch(h => console.log(h))
+;
+```
+
+```javascript
+const promise = new Promise(res => res(2));
+promise
+    .then(v => {
+        console.log(v);
+        return v * 2;
+    })
+    .then(v => {
+        console.log(v);
+        return v * 2;
+    })
+    .finally(v => {
+        console.log(v);
+        return v * 2;
+    })
+    .then(v => {
+        console.log(v);
+    });
+```
+
+```javascript
+function job() {
+    return new Promise(function(resolve, reject) {
+        reject();
+    });
+}
+
+let promise = job();
+
+promise
+
+    .then(function() {
+        console.log('Success 1');
+    })
+    
+    .then(function() {
+        console.log('Success 2');
+    })
+    
+    .then(function() {
+        console.log('Success 3');
+    })
+    
+    .catch(function() {
+        console.log('Error 1');
+    })
+    
+    .then(function() {
+        console.log('Success 4');
+    });
+```
+
+```javascript
+function job(state) {
+    return new Promise(function(resolve, reject) {
+        if (state) {
+            resolve('success');
+        } else {
+            reject('error');
+        }
+    });
+}
+
+let promise = job(true);
+
+promise
+
+.then(function(data) {
+    console.log(data);
+
+    return job(false);
+})
+
+.catch(function(error) {
+    console.log(error);
+
+    return 'Error caught';
+})
+
+.then(function(data) {
+    console.log(data);
+
+    return job(true);
+})
+
+.catch(function(error) {
+    console.log(error);
+});
+```
+
+{% embed url="https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/its-quiz-time" %}
+
+
+
