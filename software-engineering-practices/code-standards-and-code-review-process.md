@@ -10,7 +10,7 @@ Where coding conventions have been specifically designed to produce high-quality
 
 ## Refactoring
 
-[Refactoring](https://en.wikipedia.org/wiki/Refactoring) refers to a software maintenance activity where [source code](https://en.wikipedia.org/wiki/Source_code) is modified to improve readability or improve its structure. Software is often refactored to bring it into conformance with a team's stated coding standards after its initial release. Any change that does not alter the behavior of the software can be considered refactoring. Common refactoring activities are changing variable names, [renaming methods](https://en.wikipedia.org/wiki/Rename_Method), moving methods or whole classes and [breaking large methods](https://en.wikipedia.org/wiki/Extract_Method) \(or [functions](https://en.wikipedia.org/wiki/Function_%28programming%29)\) into smaller ones.  
+[Refactoring](https://en.wikipedia.org/wiki/Refactoring) refers to a software maintenance activity where [source code](https://en.wikipedia.org/wiki/Source\_code) is modified to improve readability or improve its structure. Software is often refactored to bring it into conformance with a team's stated coding standards after its initial release. Any change that does not alter the behavior of the software can be considered refactoring. Common refactoring activities are changing variable names, [renaming methods](https://en.wikipedia.org/wiki/Rename\_Method), moving methods or whole classes and [breaking large methods](https://en.wikipedia.org/wiki/Extract\_Method) (or [functions](https://en.wikipedia.org/wiki/Function\_\(programming\))) into smaller ones.\
 
 
 ## Code smells
@@ -24,4 +24,3 @@ Where coding conventions have been specifically designed to produce high-quality
 ## Code review
 
 Code review подразумевает, что программисты просматривают код друг друга, и существует некоторая формальная процедура принятия кода — например, «должны посмотреть и одобрить не меньше двух человек, из них один должен быть сеньёр/лид». Примеры: gerrit, Crucible. Если сложность балансирует на грани, то можно попытаться соблюдать соглашение добровольно, обсуждая в комментариях. Но как всё добровольное, за чем не следят роботы, оно иногда будет давать осечки.
-

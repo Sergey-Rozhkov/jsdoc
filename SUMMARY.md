@@ -61,10 +61,11 @@
   * [Routing](angular/routing.md)
   * [NgRx](angular/ngrx.md)
 * [Vue.js](vue.js/README.md)
+  * [Questions](vue.js/questions.md)
   * [Lifecycle Hooks](vue.js/life-cycle.md)
-* [React](react.md)
+* [React](react/README.md)
+  * [Links](react/links.md)
 * [Node.js](node.js/README.md)
   * [Links](node.js/links.md)
 * [Other](other/README.md)
   * [Алгоритмы](other/algoritmy.md)
-

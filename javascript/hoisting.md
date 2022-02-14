@@ -2,7 +2,9 @@
 
 ### Материалы
 
-{% embed url="https://scotch.io/tutorials/understanding-hoisting-in-javascrip" caption="Understanding Hoisting in JavaScript" %}
+{% embed url="https://scotch.io/tutorials/understanding-hoisting-in-javascrip" %}
+Understanding Hoisting in JavaScript
+{% endembed %}
 
 {% embed url="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" %}
 
@@ -94,4 +96,3 @@ function test() {
 } 
 test(); // ?
 ```
-

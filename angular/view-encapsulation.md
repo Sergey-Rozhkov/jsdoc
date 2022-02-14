@@ -1,13 +1,13 @@
 # View encapsulation
 
-* [`ShadowDom`](https://angular.io/api/core/ViewEncapsulation#ShadowDom) view encapsulation uses the browser's native shadow DOM implementation \(see [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM) on the [MDN](https://developer.mozilla.org/) site\) to attach a shadow DOM to the component's host element, and then puts the component view inside that shadow DOM. The component's styles are included within the shadow DOM.
+* [`ShadowDom`](https://angular.io/api/core/ViewEncapsulation#ShadowDom) view encapsulation uses the browser's native shadow DOM implementation (see [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web\_Components/Shadow\_DOM) on the [MDN](https://developer.mozilla.org) site) to attach a shadow DOM to the component's host element, and then puts the component view inside that shadow DOM. The component's styles are included within the shadow DOM.
 * [`Native`](https://angular.io/api/core/ViewEncapsulation#Native) view encapsulation uses a now **deprecated** version of the browser's native shadow DOM implementation - [learn about the changes](https://hayato.io/2016/shadowdomv1/).
-* [`Emulated`](https://angular.io/api/core/ViewEncapsulation#Emulated) view encapsulation \(the **default**\) emulates the behavior of shadow DOM by preprocessing \(and renaming\) the CSS code to effectively scope the CSS to the component's view. For details, see [Appendix 1](https://angular.io/guide/component-styles#inspect-generated-css).
+* [`Emulated`](https://angular.io/api/core/ViewEncapsulation#Emulated) view encapsulation (the **default**) emulates the behavior of shadow DOM by preprocessing (and renaming) the CSS code to effectively scope the CSS to the component's view. For details, see [Appendix 1](https://angular.io/guide/component-styles#inspect-generated-css).
 * [`None`](https://angular.io/api/core/ViewEncapsulation#None) means that Angular does no view encapsulation. Angular adds the CSS to the global styles. The scoping rules, isolations, and protections discussed earlier don't apply. This is essentially the same as pasting the component's styles into the HTML.
 
 {% embed url="https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html" %}
 
-{% embed url="https://angular.io/guide/component-styles\#component-styles" %}
+{% embed url="https://angular.io/guide/component-styles#component-styles" %}
 
 {% embed url="https://youtu.be/qNuYwcmmOyc" %}
 
@@ -25,9 +25,11 @@
 })
 ```
 
-* **ViewEncapsulation.None** - **нет Shadow DOM**, **нет инкапсуляции стиля** и данных. Стили из каждого компонента собираются в &lt;head&gt; финального html-документа и, соответсвенно, применяются для всего документа. Другими словами, стили одного компонента могут переписать стили соседних компонентов. Также можно отметить, что все &lt;ng-content&gt; теги заменяются на &lt;script&gt; которые работают как маркеры для content insertion points.
+* **ViewEncapsulation.None** - **нет Shadow DOM**, **нет инкапсуляции стиля** и данных. Стили из каждого компонента собираются в \<head> финального html-документа и, соответсвенно, применяются для всего документа. Другими словами, стили одного компонента могут переписать стили соседних компонентов. Также можно отметить, что все \<ng-content> теги заменяются на \<script> которые работают как маркеры для content insertion points.
 * **ViewEncapsulation.Native** - истинный **Shadow DOM** со всеми фичами и бонусами. В этом случае стили не прописываются в заголовках страницы. Вместо этого они обитают в шаблонах компонентов внутри shadow root.
-* **ViewEncapsulation.Emulated** - **нет Shadow DOM**, **создается эмуляция** инкапсуляции данных – режим настроен по умолчанию. В этом случае стили все равно прописываются в &lt;head&gt; финального html-документа НО при каждом классе появляются уточняющие селекторы  `_ngcontent-1`, `_ngcontent-0` и `_nghost-1`. Эти селекторы служат внутренней кухней Ангуляра для уточнения точек вхождения компонентов в структуру программы. `<my-zippy title="Details" _ngcontent-0 _nghost-1>` 
+* **ViewEncapsulation.Emulated** - **нет Shadow DOM**, **создается эмуляция** инкапсуляции данных – режим настроен по умолчанию. В этом случае стили все равно прописываются в \<head> финального html-документа НО при каждом классе появляются уточняющие селекторы  `_ngcontent-1`, `_ngcontent-0` и `_nghost-1`. Эти селекторы служат внутренней кухней Ангуляра для уточнения точек вхождения компонентов в структуру программы.\
+  `<my-zippy title="Details" _ngcontent-0 _nghost-1>`\
+
   * ```markup
     </my-zippy>
       <div class="zippy" _ngcontent-1>
@@ -50,13 +52,12 @@
         <button _ngcontent-c0="" class="red-button">Button</button>
 
         <blue-button _nghost-c1="" _ngcontent-c0="">
-      
+          
             <h2 _ngcontent-c1="">Blue button component</h2>
 
             <button _ngcontent-c1="" class="blue-button">Button</button>
-      
+          
       </blue-button>
 
     </app-root>
     ```
-
